@@ -1,0 +1,214 @@
+server_ready_seconds=2
+
+===== API-RUN-1 =====
+http_code=200 time_total=19.288349 seconds
+
+===== API-RUN-2 =====
+http_code=200 time_total=7.782145 seconds
+
+===== API-RUN-3 =====
+http_code=200 time_total=7.762263 seconds
+
+===== hybrid-receipt-response-1.json =====
+{
+  "camera_timestamp": "2026.06.21 17:30",
+  "date": "2026-06-21",
+  "items": [
+    {
+      "amount": 748,
+      "description": "中華そば",
+      "quantity": 1,
+      "row_marker": "1"
+    },
+    {
+      "amount": 1120,
+      "description": "特選セットA",
+      "quantity": 1,
+      "row_marker": "1"
+    },
+    {
+      "amount": 165,
+      "description": "特セット餃子+3個",
+      "quantity": 1,
+      "row_marker": "TP"
+    }
+  ],
+  "merchant": "OH/HP FOOD SERVICE CO.",
+  "party_size": 2,
+  "receipt_number": "657",
+  "staff_id": "8",
+  "staff_name": "大橋",
+  "subtotal": 2033,
+  "table_number": "25",
+  "tax": 0,
+  "time": "17:07",
+  "total": 2033,
+  "warnings": [
+    "The date on the receipt is likely incorrect. The OCR detected '2086年6月21日' which is not plausible. The camera timestamp is 2026-06-21, which is more plausible."
+  ]
+}
+timings={"cache_n": 0, "predicted_ms": 7734.654, "predicted_n": 328, "predicted_per_second": 42.27726282261624, "predicted_per_token_ms": 23.653376146788993, "prompt_ms": 11526.933, "prompt_n": 4588, "prompt_per_second": 398.0243487144412, "prompt_per_token_ms": 2.512409110723627}
+checks=24/27
+FAIL merchant actual='OH/HP FOOD SERVICE CO.'
+PASS receipt_number actual='657'
+PASS table_number actual='25'
+PASS party_size actual=2
+PASS staff_id actual='8'
+PASS staff_name actual='大橋'
+PASS date actual='2026-06-21'
+PASS time actual='17:07'
+PASS subtotal actual=2033
+PASS tax actual=0
+PASS total actual=2033
+PASS item_count actual=3
+PASS item_1_quantity actual=1
+PASS item_1_description actual='中華そば'
+PASS item_1_amount actual=748
+FAIL item_1_row_marker actual='1'
+PASS item_2_quantity actual=1
+PASS item_2_description actual='特選セットA'
+PASS item_2_amount actual=1120
+FAIL item_2_row_marker actual='1'
+PASS item_3_quantity actual=1
+PASS item_3_description actual='特セット餃子+3個'
+PASS item_3_amount actual=165
+PASS item_3_row_marker actual='TP'
+PASS sum_items_equals_subtotal actual=2033
+PASS subtotal_plus_tax_equals_total actual=(2033, 0, 2033)
+PASS date_not_in_future actual='2026-06-21'
+===== hybrid-receipt-response-2.json =====
+{
+  "camera_timestamp": "2026.06.21 17:30",
+  "date": "2026-06-21",
+  "items": [
+    {
+      "amount": 748,
+      "description": "中華そば",
+      "quantity": 1,
+      "row_marker": "1"
+    },
+    {
+      "amount": 1120,
+      "description": "特選セットA",
+      "quantity": 1,
+      "row_marker": "1"
+    },
+    {
+      "amount": 165,
+      "description": "特セット餃子+3個",
+      "quantity": 1,
+      "row_marker": "TP"
+    }
+  ],
+  "merchant": "OH/HP FOOD SERVICE CO.",
+  "party_size": 2,
+  "receipt_number": "657",
+  "staff_id": "8",
+  "staff_name": "大橋",
+  "subtotal": 2033,
+  "table_number": "25",
+  "tax": 0,
+  "time": "17:07",
+  "total": 2033,
+  "warnings": [
+    "The date on the receipt is likely incorrect. The OCR detected '2086年6月21日' which is not plausible. The camera timestamp is 2026-06-21, which is more plausible."
+  ]
+}
+timings={"cache_n": 4587, "predicted_ms": 7729.883, "predicted_n": 328, "predicted_per_second": 42.30335698483405, "predicted_per_token_ms": 23.638785932721714, "prompt_ms": 25.005, "prompt_n": 1, "prompt_per_second": 39.992001599680066, "prompt_per_token_ms": 25.005}
+checks=24/27
+FAIL merchant actual='OH/HP FOOD SERVICE CO.'
+PASS receipt_number actual='657'
+PASS table_number actual='25'
+PASS party_size actual=2
+PASS staff_id actual='8'
+PASS staff_name actual='大橋'
+PASS date actual='2026-06-21'
+PASS time actual='17:07'
+PASS subtotal actual=2033
+PASS tax actual=0
+PASS total actual=2033
+PASS item_count actual=3
+PASS item_1_quantity actual=1
+PASS item_1_description actual='中華そば'
+PASS item_1_amount actual=748
+FAIL item_1_row_marker actual='1'
+PASS item_2_quantity actual=1
+PASS item_2_description actual='特選セットA'
+PASS item_2_amount actual=1120
+FAIL item_2_row_marker actual='1'
+PASS item_3_quantity actual=1
+PASS item_3_description actual='特セット餃子+3個'
+PASS item_3_amount actual=165
+PASS item_3_row_marker actual='TP'
+PASS sum_items_equals_subtotal actual=2033
+PASS subtotal_plus_tax_equals_total actual=(2033, 0, 2033)
+PASS date_not_in_future actual='2026-06-21'
+===== hybrid-receipt-response-3.json =====
+{
+  "camera_timestamp": "2026.06.21 17:30",
+  "date": "2026-06-21",
+  "items": [
+    {
+      "amount": 748,
+      "description": "中華そば",
+      "quantity": 1,
+      "row_marker": "1"
+    },
+    {
+      "amount": 1120,
+      "description": "特選セットA",
+      "quantity": 1,
+      "row_marker": "1"
+    },
+    {
+      "amount": 165,
+      "description": "特セット餃子+3個",
+      "quantity": 1,
+      "row_marker": "TP"
+    }
+  ],
+  "merchant": "OH/HP FOOD SERVICE CO.",
+  "party_size": 2,
+  "receipt_number": "657",
+  "staff_id": "8",
+  "staff_name": "大橋",
+  "subtotal": 2033,
+  "table_number": "25",
+  "tax": 0,
+  "time": "17:07",
+  "total": 2033,
+  "warnings": [
+    "The date on the receipt is likely incorrect. The OCR detected '2086年6月21日' which is not plausible. The camera timestamp is 2026-06-21, which is more plausible."
+  ]
+}
+timings={"cache_n": 4587, "predicted_ms": 7713.657, "predicted_n": 328, "predicted_per_second": 42.392343864913876, "predicted_per_token_ms": 23.58916513761468, "prompt_ms": 25.425, "prompt_n": 1, "prompt_per_second": 39.33136676499508, "prompt_per_token_ms": 25.425}
+checks=24/27
+FAIL merchant actual='OH/HP FOOD SERVICE CO.'
+PASS receipt_number actual='657'
+PASS table_number actual='25'
+PASS party_size actual=2
+PASS staff_id actual='8'
+PASS staff_name actual='大橋'
+PASS date actual='2026-06-21'
+PASS time actual='17:07'
+PASS subtotal actual=2033
+PASS tax actual=0
+PASS total actual=2033
+PASS item_count actual=3
+PASS item_1_quantity actual=1
+PASS item_1_description actual='中華そば'
+PASS item_1_amount actual=748
+FAIL item_1_row_marker actual='1'
+PASS item_2_quantity actual=1
+PASS item_2_description actual='特選セットA'
+PASS item_2_amount actual=1120
+FAIL item_2_row_marker actual='1'
+PASS item_3_quantity actual=1
+PASS item_3_description actual='特セット餃子+3個'
+PASS item_3_amount actual=165
+PASS item_3_row_marker actual='TP'
+PASS sum_items_equals_subtotal actual=2033
+PASS subtotal_plus_tax_equals_total actual=(2033, 0, 2033)
+PASS date_not_in_future actual='2026-06-21'
+responses_identical=yes
+all_checks_passed=no

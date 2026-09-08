@@ -1,0 +1,17 @@
+
+Detected 12 speech segments:
+Speech segment 0: start = 32.00, end = 227.00
+Speech segment 1: start = 327.00, end = 441.00
+Speech segment 2: start = 538.00, end = 768.00
+Speech segment 3: start = 816.00, end = 1062.00
+Speech segment 4: start = 1331.00, end = 1526.00
+Speech segment 5: start = 1626.00, end = 1744.00
+Speech segment 6: start = 1837.00, end = 2067.00
+Speech segment 7: start = 2115.00, end = 2358.00
+Speech segment 8: start = 2631.00, end = 2829.00
+Speech segment 9: start = 2925.00, end = 3046.00
+Speech segment 10: start = 3136.00, end = 3366.00
+Speech segment 11: start = 3418.00, end = 3667.00
+
+read_audio_data: reading audio data from '~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/vad-timestamp-repro/automated-base-en/jfk-three-segments.wav' ...
+read_audio_data: trying to decode with miniaudio

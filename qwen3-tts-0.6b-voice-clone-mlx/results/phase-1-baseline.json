@@ -1,0 +1,22 @@
+{
+  "synthetic_audio": true,
+  "consent": "self_or_explicitly_authorized",
+  "model": "~/Documents/AI-Models/tts/qwen3-tts-0.6b-base-mlx",
+  "reference_audio": "~/Documents/AI-Lab/qwen3-tts-0.6b-voice-clone-mlx/private/reference/legacy-whisper-utterance-7.wav",
+  "reference_text": "这个软件什么都能听得懂啊",
+  "reference_audio_seconds": 2.624,
+  "target_text": "你好，这是一次完全在本地完成的声音克隆实验。这句话从来没有在参考录音里出现过。",
+  "language": "chinese",
+  "seed": 260906,
+  "output": "~/Documents/AI-Lab/qwen3-tts-0.6b-voice-clone-mlx/results/generated/phase-1-baseline-zh-synthetic.wav",
+  "sample_rate": 24000,
+  "samples": 192000,
+  "audio_seconds": 8.0,
+  "load_seconds": 4.022923625074327,
+  "generation_seconds": 8.181537625030614,
+  "total_seconds": 12.206929542007856,
+  "standard_rtf_processing_per_audio": 1.0226922031288268,
+  "realtime_speedup": 0.9778113071954571,
+  "mlx_peak_memory_bytes": 6629313955,
+  "process_max_rss_bytes": 2661154816
+}

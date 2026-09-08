@@ -1,0 +1,23 @@
+{
+  "synthetic_audio": true,
+  "consent": "self_or_explicitly_authorized",
+  "model": "~/Documents/AI-Models/tts/qwen3-tts-0.6b-base-mlx",
+  "reference_audio": "~/Documents/AI-Lab/qwen3-tts-0.6b-voice-clone-mlx/private/reference/iphone-60s-natural.wav",
+  "reference_text": "[已脱敏] 本人录音逐字稿，214 个汉字 / 239 字符。原文仅保存在本机 private/，不进入公开仓库。",
+  "reference_audio_seconds": 60.16,
+  "target_text": "[已脱敏] 本人录音逐字稿，214 个汉字 / 239 字符。原文仅保存在本机 private/，不进入公开仓库。",
+  "language": "chinese",
+  "seed": 260906,
+  "output": "~/Documents/AI-Lab/qwen3-tts-0.6b-voice-clone-mlx/results/generated/phase-1-iphone-repeat-synthetic.wav",
+  "sample_rate": 24000,
+  "samples": 855606,
+  "audio_seconds": 35.65025,
+  "load_seconds": 3.5618249169783667,
+  "generation_seconds": 30.023966250009835,
+  "total_seconds": 33.629547125077806,
+  "standard_rtf_processing_per_audio": 0.842181085686912,
+  "realtime_speedup": 1.187393088013091,
+  "mlx_peak_memory_bytes": 10108471853,
+  "process_max_rss_bytes": 1372291072,
+  "text_redacted": "reference_text / target_text 为本人录音的完整逐字稿，公开前已替换为特征描述。全部客观指标（时长、采样率、RTF、内存、seed、SHA-256）均未改动。分析所需的文本片段保留在同目录的 .md 报告中。"
+}

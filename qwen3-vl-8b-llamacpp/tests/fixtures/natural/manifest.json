@@ -1,0 +1,59 @@
+{
+  "sources": {
+    "source-bus.jpg": {
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63",
+      "url": "https://raw.githubusercontent.com/ultralytics/assets/main/im/bus.jpg"
+    },
+    "source-zidane.jpg": {
+      "sha256": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb",
+      "url": "https://raw.githubusercontent.com/ultralytics/assets/main/im/zidane.jpg"
+    }
+  },
+  "derivation": "Opaque rectangles were added locally; source pixels were otherwise unchanged.",
+  "cases": [
+    {
+      "id": "NAT-001",
+      "file": "source-bus.jpg",
+      "purpose": "count complete and edge-cropped pedestrians without counting reflections",
+      "width": 810,
+      "height": 1080,
+      "sha256": "c02019c4979c191eb739ddd944445ef408dad5679acab6fd520ef9d434bfbc63"
+    },
+    {
+      "id": "NAT-002",
+      "file": "source-zidane.jpg",
+      "purpose": "read people count, pointing action and image-relative spatial relations",
+      "width": 1280,
+      "height": 720,
+      "sha256": "16d73869e3267a7d4ed00de8e860833bd1657c1b252e94c0c348277adc7b6edb"
+    },
+    {
+      "id": "NAT-003",
+      "file": "34-zidane-tie-occluded.png",
+      "purpose": "refuse to invent the color of a fully occluded tie",
+      "occlusion_box_xyxy": [
+        380,
+        315,
+        650,
+        719
+      ],
+      "width": 1280,
+      "height": 720,
+      "sha256": "48f9225ac6828406f32510cd7f822b306925b355668a7e593fb7b5f98908cea9"
+    },
+    {
+      "id": "NAT-004",
+      "file": "35-bus-route-display-occluded.png",
+      "purpose": "separate hidden route display from visible city branding",
+      "occlusion_box_xyxy": [
+        25,
+        318,
+        225,
+        386
+      ],
+      "width": 810,
+      "height": 1080,
+      "sha256": "a69c3354844b73d769b8774feee9f8dc0a0240481b6cc366cd238f852fb53c32"
+    }
+  ]
+}

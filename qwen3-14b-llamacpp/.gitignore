@@ -1,0 +1,19 @@
+.DS_Store
+
+# Large model files
+models/
+*.gguf
+*.safetensors
+
+# Local source/build worktrees
+worktrees/
+build/
+build-*/
+
+# Local caches
+.cache/
+__pycache__/
+*.pyc
+
+# Regenerable detailed benchmark logs
+results/*-latest.log

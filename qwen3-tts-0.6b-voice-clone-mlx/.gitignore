@@ -1,0 +1,15 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+*.part
+
+# 本人声纹与克隆结果不进入版本控制
+private/
+results/generated/
+
+# 临时文件
+tmp/
+
+# ── 2026-09-09 补充（公开前审计）──
+*.m4a

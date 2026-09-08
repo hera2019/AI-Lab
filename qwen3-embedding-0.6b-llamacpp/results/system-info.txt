@@ -1,0 +1,15 @@
+Date: 2026-09-05 (Asia/Tokyo)
+Hardware: Mac Studio
+Chip: Apple M2 Max
+Unified memory: 34359738368 bytes (32 GiB)
+macOS: 26.6.2 (25G83)
+AppleClang: 21.0.0 (clang-2100.1.1.101)
+llama.cpp commit: 6a1a922d269908a29cbd4b49c27e6a8e7fd10fae
+llama.cpp version: 0.4.0-dev (build 10819)
+Build: Release
+Backends: Metal, Accelerate, CPU
+Model: Qwen3-Embedding-0.6B-Q8_0.gguf
+Model bytes: 639150592
+Model SHA-256: 06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439
+Disk available after build and model download: 130 GiB
+Privacy: serial number, Hardware UUID, and provisioning identifiers were not collected.

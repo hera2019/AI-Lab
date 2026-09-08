@@ -1,0 +1,12 @@
+Model: Qwen/Qwen3-Embedding-0.6B-GGUF
+Revision: 370f27d7550e0def9b39c1f16d3fbaa13aa67728
+File: Qwen3-Embedding-0.6B-Q8_0.gguf
+Bytes: 639150592
+SHA-256: 06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439
+Quantization: Q8_0
+Parameters: 0.6B
+Context: 32768 tokens
+Embedding dimension: 1024
+Pooling: last token
+Normalization: Euclidean (L2)
+License: Apache-2.0

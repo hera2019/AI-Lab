@@ -1,0 +1,43 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "~/Documents/AI-Models/whispercpp/ggml-large-v3-turbo-q5_0.bin",
+		"language": "ja",
+		"translate": false
+	},
+	"result": {
+		"language": "ja"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:30,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 30000
+			},
+			"text": "今日は2026年9月2日です。会議は午後3時15分に始まります。注文番号はA731です。"
+		}
+	]
+}

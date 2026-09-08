@@ -1,0 +1,284 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B-GGUF:Q8_0",
+  "pooling": "last",
+  "normalization": "euclidean",
+  "passage_input": "title + body",
+  "dimension": 1024,
+  "passage_count": 12,
+  "query_count": 9,
+  "embedding_seconds": 1.1276984590804204,
+  "correct_at_1": 9,
+  "correct_at_3": 9,
+  "results": [
+    {
+      "id": "Q01",
+      "language": "zh",
+      "query": "如果运行时内存装不下，系统会把暂时不用的数据挪到哪里？",
+      "expected": "memory-swap",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "memory-swap",
+          "title": "swap 与统一内存",
+          "score": 0.58393535835971,
+          "text": "Mac 的统一内存不足时，macOS 可以把暂时不用的内存页面写入 SSD，这叫 swap。它能避免程序立刻崩溃，但速度明显低于直接使用内存，并会增加磁盘读写。"
+        },
+        {
+          "rank": 2,
+          "id": "model-storage",
+          "title": "模型与项目分离",
+          "score": 0.40594005820652,
+          "text": "大体积模型权重统一放在 AI-Models，实验脚本、README、测试与结果保存在 AI-Lab。删除暂时不用的模型不会破坏研究记录，同一权重也可以被多个项目复用。"
+        },
+        {
+          "rank": 3,
+          "id": "apple-metal",
+          "title": "Apple Metal 加速",
+          "score": 0.35992136466708,
+          "text": "Metal 是 Apple 的图形与计算接口。llama.cpp、whisper.cpp 和 stable-diffusion.cpp 可以通过 Metal 把大量矩阵运算交给 Apple GPU，从而加快本地 AI 推理。"
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "language": "ja",
+      "query": "Apple の GPU を使ってローカル AI の計算を速くする仕組みは何ですか。",
+      "expected": "apple-metal",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "apple-metal",
+          "title": "Apple Metal 加速",
+          "score": 0.65712444085196,
+          "text": "Metal 是 Apple 的图形与计算接口。llama.cpp、whisper.cpp 和 stable-diffusion.cpp 可以通过 Metal 把大量矩阵运算交给 Apple GPU，从而加快本地 AI 推理。"
+        },
+        {
+          "rank": 2,
+          "id": "model-storage",
+          "title": "模型与项目分离",
+          "score": 0.41484193122869,
+          "text": "大体积模型权重统一放在 AI-Models，实验脚本、README、测试与结果保存在 AI-Lab。删除暂时不用的模型不会破坏研究记录，同一权重也可以被多个项目复用。"
+        },
+        {
+          "rank": 3,
+          "id": "fastwan",
+          "title": "FastWan 快速预览",
+          "score": 0.38311727652143,
+          "text": "FastWan 是经过蒸馏的社区视频模型，只用三步即可预览动作和构图。在 M2 Max 上，原本约七分钟的 33 帧生成缩短到约一分钟，但纹理和光照稳定性弱于原版二十步。"
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "language": "en",
+      "query": "How did we reduce a seven-minute video preview to roughly one minute?",
+      "expected": "fastwan",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "fastwan",
+          "title": "FastWan 快速预览",
+          "score": 0.57392163387021,
+          "text": "FastWan 是经过蒸馏的社区视频模型，只用三步即可预览动作和构图。在 M2 Max 上，原本约七分钟的 33 帧生成缩短到约一分钟，但纹理和光照稳定性弱于原版二十步。"
+        },
+        {
+          "rank": 2,
+          "id": "vae-tae",
+          "title": "VAE 与 TAE 的取舍",
+          "score": 0.52487670721947,
+          "text": "视频扩散模型先在潜空间生成结果，再由解码器还原为可见画面。完整 VAE 细节更好但解码很慢；TAE 牺牲部分纹理，能快速预览，因此适合反复调整 Prompt、动作与 seed。"
+        },
+        {
+          "rank": 3,
+          "id": "model-storage",
+          "title": "模型与项目分离",
+          "score": 0.42645240250713,
+          "text": "大体积模型权重统一放在 AI-Models，实验脚本、README、测试与结果保存在 AI-Lab。删除暂时不用的模型不会破坏研究记录，同一权重也可以被多个项目复用。"
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "language": "zh",
+      "query": "为什么反复调整视频动作时，不应该每一次都用画质最好的完整解码器？",
+      "expected": "vae-tae",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "vae-tae",
+          "title": "VAE 与 TAE 的取舍",
+          "score": 0.57803306099897,
+          "text": "视频扩散模型先在潜空间生成结果，再由解码器还原为可见画面。完整 VAE 细节更好但解码很慢；TAE 牺牲部分纹理，能快速预览，因此适合反复调整 Prompt、动作与 seed。"
+        },
+        {
+          "rank": 2,
+          "id": "fastwan",
+          "title": "FastWan 快速预览",
+          "score": 0.42670855390087,
+          "text": "FastWan 是经过蒸馏的社区视频模型，只用三步即可预览动作和构图。在 M2 Max 上，原本约七分钟的 33 帧生成缩短到约一分钟，但纹理和光照稳定性弱于原版二十步。"
+        },
+        {
+          "rank": 3,
+          "id": "i2v",
+          "title": "I2V 图片生成视频",
+          "score": 0.37551773470856,
+          "text": "I2V 是 Image-to-Video 的缩写：以一张输入图片作为主体和构图参考，再生成连续视频帧。它通常比纯文字生成视频更容易保持指定角色、物体和背景。"
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "language": "ja",
+      "query": "一枚の画像を基準にして短い動画を作る方式は何と呼ばれますか。",
+      "expected": "i2v",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "i2v",
+          "title": "I2V 图片生成视频",
+          "score": 0.54920584530409,
+          "text": "I2V 是 Image-to-Video 的缩写：以一张输入图片作为主体和构图参考，再生成连续视频帧。它通常比纯文字生成视频更容易保持指定角色、物体和背景。"
+        },
+        {
+          "rank": 2,
+          "id": "fastwan",
+          "title": "FastWan 快速预览",
+          "score": 0.49792722343933,
+          "text": "FastWan 是经过蒸馏的社区视频模型，只用三步即可预览动作和构图。在 M2 Max 上，原本约七分钟的 33 帧生成缩短到约一分钟，但纹理和光照稳定性弱于原版二十步。"
+        },
+        {
+          "rank": 3,
+          "id": "vae-tae",
+          "title": "VAE 与 TAE 的取舍",
+          "score": 0.47157297548811,
+          "text": "视频扩散模型先在潜空间生成结果，再由解码器还原为可见画面。完整 VAE 细节更好但解码很慢；TAE 牺牲部分纹理，能快速预览，因此适合反复调整 Prompt、动作与 seed。"
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "language": "en",
+      "query": "Where should large downloaded weights live so deleting them does not erase experiment notes?",
+      "expected": "model-storage",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "model-storage",
+          "title": "模型与项目分离",
+          "score": 0.70707152415768,
+          "text": "大体积模型权重统一放在 AI-Models，实验脚本、README、测试与结果保存在 AI-Lab。删除暂时不用的模型不会破坏研究记录，同一权重也可以被多个项目复用。"
+        },
+        {
+          "rank": 2,
+          "id": "quantization",
+          "title": "Q4 与模型权重量化",
+          "score": 0.39563429261874,
+          "text": "Q4 表示模型权重大多以约四比特形式存储，用较小体积换取少量精度损失。它描述的是模型权重，不等于运行时 KV cache 使用的 f16 数据类型。"
+        },
+        {
+          "rank": 3,
+          "id": "vae-tae",
+          "title": "VAE 与 TAE 的取舍",
+          "score": 0.37362458663772,
+          "text": "视频扩散模型先在潜空间生成结果，再由解码器还原为可见画面。完整 VAE 细节更好但解码很慢；TAE 牺牲部分纹理，能快速预览，因此适合反复调整 Prompt、动作与 seed。"
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "language": "zh",
+      "query": "怎样降低收据数字识别错误进入财务账目的风险？",
+      "expected": "ocr-hybrid",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "ocr-hybrid",
+          "title": "票据 OCR 互相验证",
+          "score": 0.67826758885563,
+          "text": "票据金额不允许悄悄识别错误。可靠流程可以先用传统 OCR 提取文字和坐标，再让视觉语言模型理解表格，最后通过商品金额求和、税额与总额关系以及多模型交叉验证发现异常。"
+        },
+        {
+          "rank": 2,
+          "id": "model-storage",
+          "title": "模型与项目分离",
+          "score": 0.3251483829287,
+          "text": "大体积模型权重统一放在 AI-Models，实验脚本、README、测试与结果保存在 AI-Lab。删除暂时不用的模型不会破坏研究记录，同一权重也可以被多个项目复用。"
+        },
+        {
+          "rank": 3,
+          "id": "vad",
+          "title": "VAD 检测人声",
+          "score": 0.29015138470355,
+          "text": "VAD 判断音频中是否存在真正的人声，而不仅是任意声音。它可以阻止 Whisper 在安静、风扇声或背景噪声中反复产生并不存在的字幕。"
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "language": "zh",
+      "query": "没有人说话时，怎样避免语音模型凭空显示字幕？",
+      "expected": "vad",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "vad",
+          "title": "VAD 检测人声",
+          "score": 0.49836635931114,
+          "text": "VAD 判断音频中是否存在真正的人声，而不仅是任意声音。它可以阻止 Whisper 在安静、风扇声或背景噪声中反复产生并不存在的字幕。"
+        },
+        {
+          "rank": 2,
+          "id": "model-storage",
+          "title": "模型与项目分离",
+          "score": 0.48868256211933,
+          "text": "大体积模型权重统一放在 AI-Models，实验脚本、README、测试与结果保存在 AI-Lab。删除暂时不用的模型不会破坏研究记录，同一权重也可以被多个项目复用。"
+        },
+        {
+          "rank": 3,
+          "id": "vae-tae",
+          "title": "VAE 与 TAE 的取舍",
+          "score": 0.44561545507211,
+          "text": "视频扩散模型先在潜空间生成结果，再由解码器还原为可见画面。完整 VAE 细节更好但解码很慢；TAE 牺牲部分纹理，能快速预览，因此适合反复调整 Prompt、动作与 seed。"
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "language": "ja",
+      "query": "検索した根拠を会話モデルに渡して回答させる仕組みは何ですか。",
+      "expected": "rag",
+      "expected_rank": 1,
+      "top3": [
+        {
+          "rank": 1,
+          "id": "rag",
+          "title": "RAG 的分工",
+          "score": 0.56116468536586,
+          "text": "RAG 先用 embedding 模型搜索相关资料，再把少量原文和用户问题交给聊天模型。向量模型负责找，生成模型负责写；引用来源可以让用户核对回答，而不是盲目信任模型。"
+        },
+        {
+          "rank": 2,
+          "id": "model-storage",
+          "title": "模型与项目分离",
+          "score": 0.46854165081819,
+          "text": "大体积模型权重统一放在 AI-Models，实验脚本、README、测试与结果保存在 AI-Lab。删除暂时不用的模型不会破坏研究记录，同一权重也可以被多个项目复用。"
+        },
+        {
+          "rank": 3,
+          "id": "context-window",
+          "title": "上下文窗口",
+          "score": 0.42767018255757,
+          "text": "上下文窗口决定模型一次能够看到多少 token。更大的上下文可以容纳更长的对话和资料，但会增加内存占用与处理时间，并不自动提高回答质量。"
+        }
+      ]
+    }
+  ]
+}

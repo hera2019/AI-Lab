@@ -1,0 +1,108 @@
+Phase 1 - Qwen3-14B Q4_K_M Smoke Test
+=====================================
+
+Date: 2026-08-30 JST
+
+Model
+-----
+Repository: Qwen/Qwen3-14B-GGUF
+File: Qwen3-14B-Q4_K_M.gguf
+Quantization: Q4_K_M
+Remote repository revision: 530227a7d994db8eca5ab5ced2fb692b614357fd
+Size: 9001752960 bytes (about 8.38 GiB)
+SHA-256 expected: 500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0
+SHA-256 actual:   500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0
+Integrity result: PASS
+
+Model cache (outside project)
+-----------------------------
+~/Documents/AI-Models/huggingface
+
+llama.cpp
+---------
+Project-relative worktree: worktrees/llama.cpp
+Project-relative binary: worktrees/llama.cpp/build-release-metal/bin/llama-cli
+Build: b10700-bebc9350e
+Commit: bebc9350ecc42a31ad119da1513998386671cf5b
+
+Inference configuration
+-----------------------
+Context: 4096
+GPU layers: all
+Flash Attention: on
+Reasoning: off
+Temperature: 0.7
+Top-k: 20
+Top-p: 0.8
+Min-p: 0
+Max generated tokens: 128
+
+Prompt
+------
+你好。请用三句话解释什么是大型语言模型，每句话不超过30个汉字。
+
+Output
+------
+大型语言模型是基于大量文本训练的深度学习模型。
+它能理解和生成自然语言，完成多种任务。
+常用于聊天、写作、翻译等人工智能应用。
+
+Functional result
+-----------------
+Model load: PASS
+Chinese output: PASS
+Three-sentence instruction: PASS
+Per-sentence length constraint: PASS
+Clean exit: PASS
+Crash: none
+
+Performance
+-----------
+Prompt processing: 83.8 tokens/s
+Generation: 29.1 tokens/s
+First-run total wall time including download: 1195.15 seconds
+Warm-cache offline load plus one-token verification: 1.72 seconds
+First-run maximum resident set size: 9411379200 bytes (about 8.76 GiB)
+Offline verification maximum resident set size: 9808510976 bytes (about 9.14 GiB)
+Swap events reported by /usr/bin/time: 0
+System-wide swap after Phase 1: 3296.75 MiB used (4096 MiB total)
+Attribution note: no system-wide pre-run baseline was captured, so the existing swap usage cannot be attributed to this model run.
+
+Reproducibility script verification
+-----------------------------------
+Command: scripts/run_smoke_test.sh
+Mode: offline, warm file cache
+Exit status: 0
+Wall time: about 4.5 seconds
+Prompt processing: 205.0 tokens/s
+Generation: 29.1 tokens/s
+Output constraints: PASS
+
+The first-run and warm-cache prompt rates are recorded separately. They are not treated as a formal benchmark.
+
+Metal verification
+------------------
+Device: MTL0 - Apple M2 Max
+GPU offload: 41/41 layers
+Metal model buffer: 8579.06 MiB
+Metal KV buffer: 640.00 MiB
+Metal compute buffer: 126.01 MiB
+CPU-mapped model buffer: 417.30 MiB
+Metal fusion: enabled
+Metal concurrency: enabled
+Metal graph optimization: enabled
+CPU-only fallback: no
+
+Disk after Phase 1
+------------------
+Available: about 43 GiB
+Model cache total: about 8.4 GiB
+
+Scope
+-----
+Only Qwen3-14B Q4_K_M was downloaded.
+No other quantization was downloaded.
+No model copy was placed inside this project.
+No llama-bench benchmark or slow test was run.
+No existing Git branch was modified.
+No Git commit or push was performed.

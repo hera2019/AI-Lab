@@ -1,0 +1,9 @@
+User:
+Translate the following Japanese text into Simplified Chinese. Preserve every date, time, and identifier exactly. Output only the Chinese translation, with no notes.
+
+Japanese:
+今日は2026年9月2日です。会議は午後3時15分に始まります。注文番号はA731です。
+
+Assistant:
+2026年9月2日 3:15 上午，订单编号为A731。
+

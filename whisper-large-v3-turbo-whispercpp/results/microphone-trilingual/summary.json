@@ -1,0 +1,133 @@
+{
+  "input_language": "zh",
+  "output_languages": [
+    "zh",
+    "ja",
+    "en"
+  ],
+  "vad_mode": "Silero streaming",
+  "vad_threshold": 0.2,
+  "events": [
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-0.wav",
+      "audio_seconds": 1.088,
+      "vad_peak_probability": 0.9965,
+      "chinese": "我太好了",
+      "japanese": "私はとても良いです",
+      "english": "I am very good",
+      "asr_seconds": 0.48818995797773823,
+      "translation_seconds": 0.5261773330275901,
+      "processing_seconds": 1.0143672910053283,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-1.wav",
+      "audio_seconds": 1.024,
+      "vad_peak_probability": 0.9096,
+      "chinese": "阿们",
+      "japanese": "アメン",
+      "english": "Amen",
+      "asr_seconds": 0.46808783401502296,
+      "translation_seconds": 0.2607928329962306,
+      "processing_seconds": 0.7288806670112535,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-2.wav",
+      "audio_seconds": 1.856,
+      "vad_peak_probability": 0.9998,
+      "chinese": "你跟妈妈分享吗",
+      "japanese": "あなたは母に共有しますか",
+      "english": "Do you share it with your mother?",
+      "asr_seconds": 0.4768189170281403,
+      "translation_seconds": 0.44719724997412413,
+      "processing_seconds": 0.9240161670022644,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-3.wav",
+      "audio_seconds": 1.792,
+      "vad_peak_probability": 0.9975,
+      "chinese": "你的妈妈在家吗",
+      "japanese": "あなたの母は home ですか",
+      "english": "Is your mother at home?",
+      "asr_seconds": 0.4760653750272468,
+      "translation_seconds": 0.49490229197544977,
+      "processing_seconds": 0.9709676670026965,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-4.wav",
+      "audio_seconds": 1.536,
+      "vad_peak_probability": 0.9977,
+      "chinese": "你能听懂吗",
+      "japanese": "あなたは理解できますか",
+      "english": "Can you understand?",
+      "asr_seconds": 0.4722791670355946,
+      "translation_seconds": 0.3685131669626571,
+      "processing_seconds": 0.8407923339982517,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-5.wav",
+      "audio_seconds": 2.56,
+      "vad_peak_probability": 0.9999,
+      "chinese": "現在的識別率非常不夠",
+      "japanese": "現在の識別率は非常に不足です",
+      "english": "The current identification rate is very insufficient",
+      "asr_seconds": 0.4860584170091897,
+      "translation_seconds": 0.4914425410097465,
+      "processing_seconds": 0.9775009580189362,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-6.wav",
+      "audio_seconds": 2.688,
+      "vad_peak_probability": 1.0,
+      "chinese": "现在的识别率非常高",
+      "japanese": "現在の識別率は非常に高い",
+      "english": "The current recognition rate is very high",
+      "asr_seconds": 0.4767309160088189,
+      "translation_seconds": 0.45139116601785645,
+      "processing_seconds": 0.9281220820266753,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-7.wav",
+      "audio_seconds": 2.624,
+      "vad_peak_probability": 1.0,
+      "chinese": "这个软件什么都能听得懂啊",
+      "japanese": "このソフトはどんなことでも聞き取れるね",
+      "english": "This software can understand anything",
+      "asr_seconds": 0.48793050000676885,
+      "translation_seconds": 0.45228441699873656,
+      "processing_seconds": 0.9402149170055054,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-8.wav",
+      "audio_seconds": 1.024,
+      "vad_peak_probability": 0.4214,
+      "chinese": "好",
+      "japanese": "こんにちは",
+      "english": "Hello",
+      "asr_seconds": 0.46505237504607067,
+      "translation_seconds": 0.23762070800876245,
+      "processing_seconds": 0.7026730830548331,
+      "error": null
+    },
+    {
+      "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/microphone-trilingual/segments/utterance-9.wav",
+      "audio_seconds": 1.408,
+      "vad_peak_probability": 1.0,
+      "chinese": "真是太棒了",
+      "japanese": "とても良いです",
+      "english": "That's great.",
+      "asr_seconds": 0.4770944589981809,
+      "translation_seconds": 0.2989769160049036,
+      "processing_seconds": 0.7760713750030845,
+      "error": null
+    }
+  ],
+  "ignored": []
+}

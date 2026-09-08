@@ -1,0 +1,31 @@
+[transformers] You are using a model of type `qwen3_tts` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+  Initialized encoder codebooks
+Loaded speech tokenizer from ~/Documents/AI-Models/tts/qwen3-tts-0.6b-base-mlx/speech_tokenizer
+output=~/Documents/AI-Lab/qwen3-tts-0.6b-voice-clone-mlx/results/generated/phase-1-archive-8s-zh-synthetic.wav
+metadata=~/Documents/AI-Lab/qwen3-tts-0.6b-voice-clone-mlx/results/phase-1-archive-8s.json
+reference_audio_seconds=8.826
+generated_audio_seconds=8.240
+model_load_seconds=2.199
+generation_seconds=5.880
+standard_rtf=0.714
+realtime_speedup=1.401x
+mlx_peak_memory_bytes=7581664929
+synthetic_audio=yes
+        8.78 real         2.56 user         3.25 sys
+          2227191808  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              177409  page reclaims
+                1273  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                4408  voluntary context switches
+              104011  involuntary context switches
+         42197709408  instructions retired
+         18087516417  cycles elapsed
+         14491405192  peak memory footprint

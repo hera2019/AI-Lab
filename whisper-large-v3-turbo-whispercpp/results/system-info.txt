@@ -1,0 +1,191 @@
+Phase: 0
+Date: 2026-09-01
+
+Hardware
+--------
+Mac: Mac Studio
+Chip: Apple M2 Max
+Unified Memory: 32 GB
+
+Software
+--------
+macOS: 26.6.2 (25G83)
+AppleClang: 21.0.0 (clang-2100.1.1.101)
+CMake: 4.4.2
+FFmpeg: 9.0.1
+
+whisper.cpp
+-----------
+Repository: https://github.com/ggml-org/whisper.cpp
+Branch: master
+Commit: eacbd8234c6654cdbf2c377f72b2106875479bdc
+Commit subject: whisper : default-initialize whisper_mel to avoid uninitialized read (#3981)
+Git status: clean, master aligned with origin/master
+Reported version: 1.9.3-dev
+ggml version: 0.22.0
+
+Build
+-----
+Build directory: worktrees/whisper.cpp/build-release-metal
+CMAKE_BUILD_TYPE: Release
+GGML_METAL: ON
+GGML_METAL_EMBED_LIBRARY: ON
+WHISPER_COMMON_FFMPEG: ON
+WHISPER_BUILD_EXAMPLES: ON
+WHISPER_BUILD_SERVER: ON
+WHISPER_BUILD_TESTS: OFF
+Accelerate: found
+Metal framework: found
+FFmpeg libraries: found
+OpenMP: not found; non-blocking for this Metal/Accelerate build
+
+Verified arm64 executables
+--------------------------
+worktrees/whisper.cpp/build-release-metal/bin/whisper-cli
+worktrees/whisper.cpp/build-release-metal/bin/whisper-server
+worktrees/whisper.cpp/build-release-metal/bin/whisper-bench
+
+whisper-cli advertised formats
+--------------------------------
+flac, mp3, ogg, wav
+
+Model state
+-----------
+Primary Whisper model downloaded and verified (see Phase 1 update).
+VAD model downloaded and verified (see Phase 3 update).
+Supplemental base.en model downloaded for cross-model VAD timestamp comparison.
+No Core ML model generated.
+Primary model: large-v3-turbo-q5_0 (547.45 MiB)
+External model directory: ~/Documents/AI-Models/whispercpp
+
+Phase 1 update (2026-09-02)
+---------------------------
+Downloaded model: ~/Documents/AI-Models/whispercpp/ggml-large-v3-turbo-q5_0.bin
+Model size: 574041195 bytes (547.45 MiB)
+Model SHA-1: e050f7970618a659205450ad97eb95a18d69c9ee
+Model checksum: verified against the official whisper.cpp model list
+Clean baseline: completed
+Metal detected during every Phase 1 inference run: yes
+Warm short-audio peak RSS: approximately 824-826 MiB
+Available disk after Phase 1: approximately 23 GiB
+
+Phase 2A update (2026-09-02)
+----------------------------
+Direct input verified: WAV/PCM, M4A/AAC, MP3, MOV/H.264+AAC
+FFmpeg normalization verified: M4A and MOV to 16 kHz mono PCM WAV
+Subtitle outputs verified: TXT, JSON, SRT, VTT
+Timed fixture duration: 12.036875 seconds
+Standard subtitle wall RTF: 0.0978
+Known limitation: the first two cue end times extend about 2 seconds across silence
+Real iPhone microphone recording: not yet tested
+Long audio: not yet tested
+
+Phase 3 update (2026-09-02)
+---------------------------
+VAD model: ~/Documents/AI-Models/whispercpp/ggml-silero-v6.2.0.bin
+VAD model size: 885098 bytes
+VAD SHA-256: 2aa269b785eeb53a82983a20501ddf7c1d9c48e33ab63a41391ac6c9f7fb6987
+VAD checksum matched remote Hugging Face LFS x-linked-etag: yes
+Noise tests: clean, 20 dB, 10 dB, 0 dB pink noise
+Pure silence hallucination without VAD: Thank you.
+Pure silence output with VAD: empty
+67.291-second sparse-audio VAD speedup: approximately 2.19x
+VAD subtitle mapping candidate: third cue detected at 9.12 s but emitted at 8.16 s
+
+VAD timestamp follow-up (2026-09-02)
+------------------------------------
+Official sample used: worktrees/whisper.cpp/samples/jfk.wav
+Fixture: three JFK copies separated by two 2-second silent gaps
+Fixture SHA-256: 9ce1e9d977d28a13b4e620155b1bd4505c2a33ae636e0394dd2061aa365da773
+large-v3-turbo VAD cue 2 start: 10.370 s; source copy starts at 13.000 s
+large-v3-turbo VAD cue 3 start: 24.940 s; source copy starts at 26.000 s
+base.en VAD cue starts: 0.320 s, 13.340 s, 26.340 s
+base.en model size: 147964211 bytes
+base.en SHA-1: 137c40403d78fd54d454da0f9bd998f78703390c
+Upstream duplicate search: related open issues #3634 and #3584
+No whisper.cpp source changes made
+
+Disk
+----
+Project size after source and build: about 114 MB
+Available disk space after VAD comparison: about 23 GiB
+
+Phase 4A Japanese speech to Chinese (2026-09-02)
+--------------------------------------------------
+Audio duration: 10.153438 seconds
+Pipeline: Whisper Japanese transcription -> Qwen Simplified Chinese translation
+Qwen3-0.6B Q8_0 size: 639446688 bytes
+Qwen3-0.6B SHA-256: 9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031
+Qwen3-0.6B result: failed quality checks (omission and afternoon/morning error)
+Qwen3-0.6B cache after test: deleted; results preserved
+Qwen3-4B Q4_K_M size: 2497280256 bytes
+Qwen3-4B SHA-256: 7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5
+Qwen3-4B output: 今天是2026年9月2日。会议于下午3点15分开始。订单号是A731。
+Qwen3-4B runs: 3, identical output, critical checks 5/5 each
+Average ASR wall time: 1.027 seconds
+Average text translation wall time: 2.446 seconds
+Average end-to-end wall time: 3.473 seconds
+Average end-to-end RTF: 0.342 (about 2.92x realtime)
+Maximum Whisper RSS: 868139008 bytes
+Maximum Qwen translation RSS: 2921938944 bytes
+Swap events: 0
+llama-bench backend: MTL,BLAS
+llama-bench pp64: 669.31 tokens/s
+llama-bench tg32: 76.94 tokens/s
+Available disk after deleting failed 0.6B cache: about 21 GiB
+
+Phase 4B realtime playback simulation (2026-09-03)
+-----------------------------------------------------
+Audio duration: 10.1534375 seconds
+Playback rate: 1.0
+Input method: timed local WAV slices; no microphone used
+VAD speech segments: 0.10-3.29, 3.52-6.65, 6.88-10.153 seconds
+Temporary subtitle first appearance after speech start: about 1.86 seconds
+Average stable Japanese latency after speech end: 0.753 seconds
+Average Simplified Chinese latency after speech end: 0.953 seconds
+Average incremental translation latency: about 0.200 seconds
+Final Japanese lines correct: 3/3
+Final Chinese critical fields correct: 5/5
+Processing errors: 0
+Microphone build: build-release-metal-stream/bin/whisper-stream
+Microphone audio dependency: SDL2 compatibility library 2.32.70
+Microphone build backends: Apple Metal, Accelerate BLAS
+Microphone permission/live input: not tested yet
+whisper.cpp source changes: none
+
+Phase 4C context and result-preservation follow-up (2026-09-03)
+-----------------------------------------------------------------
+Default result layout: results/microphone-trilingual/runs/YYYYMMDD-HHMMSS-PID
+Automatic overwrite of previous default run: prevented
+Translation context window: last 2 confirmed Chinese subtitles
+Context behavior: read-only for disambiguation; output current subtitle only
+Context recorded per event: yes, translation_context
+Short reply regression context: 这个软件什么都能听得懂啊 | 你能听懂吗
+Short reply input: 好
+Japanese before/after: こんにちは -> いいですね
+English before/after: Hello -> Good
+Context regression translation time: 0.591 seconds
+
+Phase 4C Chinese microphone trilingual subtitles (2026-09-03)
+----------------------------------------------------------------
+Capture device: OpenFit by Shokz
+Capture format: 16000 Hz, mono, float PCM, 1024 samples per frame
+Pipeline: microphone -> streaming Silero VAD -> Whisper zh -> Qwen ja+en
+Silero default threshold after quiet-speech calibration: 0.20
+Silero speech start: 2 consecutive 64 ms frames
+Silero speech end: 13 consecutive 64 ms frames (approximately 0.83 s)
+Quiet background speech probability: typically 0.00-0.04
+Actual speech peak probability: 1.00
+Final microphone segment duration: 5.504 seconds
+Final Chinese: 明天下午3:15开会订单号是A731
+Final Japanese: 明日午後3時15分に会議を開きます。注文番号はA731です。
+Final English: A meeting will be held at 3:15 PM tomorrow. The order number is A731.
+Whisper ASR after segment finalization: 0.642 seconds
+Qwen Japanese+English translation: 1.166 seconds
+Post-finalization processing: 1.808 seconds
+Estimated speech-end-to-all-subtitles: approximately 2.64 seconds
+Displayed duplicate blocks: 0
+Suspicious stock-phrase candidates ignored: 1
+Custom capture binary: tools/bin/mic-silero-capture
+Custom capture source: tools/mic_silero_capture.cpp
+whisper.cpp source changes: none

@@ -1,0 +1,13 @@
+Recorded: 2026-09-05 Asia/Tokyo
+
+MISSING-IMAGE exit_code=1
+MISSING-IMAGE PASS: invalid input rejected before generation
+EMPTY-IMAGE exit_code=1
+EMPTY-IMAGE PASS: invalid input rejected before generation
+TEXT-AS-JPEG exit_code=1
+TEXT-AS-JPEG PASS: invalid input rejected before generation
+MISSING-MODEL exit_code=1
+MISSING-MODEL PASS: missing model rejected
+failed_checks=0
+
+The individual stderr/stdout logs are stored beside this file.

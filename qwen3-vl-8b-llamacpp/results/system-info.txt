@@ -1,0 +1,50 @@
+Recorded: 2026-08-31
+
+Hardware
+  Model: Mac Studio
+  Chip: Apple M2 Max
+  CPU cores: 12 (8 performance + 4 efficiency)
+  Unified memory: 32 GB
+
+Software
+  macOS: 26.6.2 (25G83)
+  AppleClang: 21.0.0 (clang-2100.1.1.101)
+  Target: arm64-apple-darwin25.6.0
+
+llama.cpp
+  Worktree: worktrees/llama.cpp/
+  Git state: detached from origin/master
+  Commit: 0190529ec450659b541ff608449401e68c27d098
+  Build: 10706
+  Configuration: Release, GGML_METAL=ON, GGML_METAL_EMBED_LIBRARY=ON, MTMD_VIDEO=ON
+  Binaries: llama-cli, llama-server, llama-mtmd-cli
+  Metal device: MTL0 Apple M2 Max
+  Metal recommended memory: 25559 MiB
+  BLAS: Apple Accelerate
+
+Model
+  Repository: Qwen/Qwen3-VL-8B-Instruct-GGUF
+  Repository revision: f982a07559d4a2f6c8744d840bf6fccab30eea96
+  Main model: Qwen3VL-8B-Instruct-Q4_K_M.gguf
+  Main bytes: 5027784800
+  Main SHA-256: 67d1659bfe71b89d50b45a4ad1a9e5b997e5bb16ce5da66a6a6167abd569e9e2
+  Projector: mmproj-Qwen3VL-8B-Instruct-Q8_0.gguf
+  Projector bytes: 752289728
+  Projector SHA-256: c6ba85508d82f42590e6eb77d5340369ab6fecf107a7561d809523d8aa5f3bfd
+  Modalities reported by llama-cli: text, vision, video
+
+Storage
+  Dedicated cache before download: 0 KiB
+  Dedicated cache after download: 5652612 KiB
+  Disk available before download: 47985116 KiB
+  Disk available after smoke test: 41236856 KiB
+  Note: disk-available delta includes OS/APFS activity and is not the model's exact size.
+
+OCR-001 smoke test
+  Input: tests/fixtures/images/11-ocr-clean.png
+  Prompt processing: 242.3 tokens/second
+  Generation: 51.1 tokens/second
+  Result: four lines exact; one Unicode-equivalence-style mismatch
+  Expected: 温度：23.5°C (U+00B0 followed by U+0043)
+  Actual:   温度：23.5℃ (U+2103)
+  Strict verdict: FAIL

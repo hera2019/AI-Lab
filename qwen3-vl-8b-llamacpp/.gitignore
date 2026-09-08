@@ -1,0 +1,21 @@
+.DS_Store
+
+# Large model and media files
+models/
+*.gguf
+*.safetensors
+*.mp4
+*.mov
+
+# Local source/build worktrees
+worktrees/
+build/
+build-*/
+
+# Local caches
+.cache/
+__pycache__/
+*.pyc
+
+# Regenerable detailed logs
+results/*-latest.log

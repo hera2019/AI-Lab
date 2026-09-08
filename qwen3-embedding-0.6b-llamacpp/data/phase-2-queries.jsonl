@@ -1,0 +1,8 @@
+{"id":"P2-Q01","language":"zh","query":"为什么猫眨眼的测试最后只能算部分成功？","expected_project":"wan2.2-ti2v-5b-stablediffusioncpp","preferred_path":"wan2.2-ti2v-5b-stablediffusioncpp/results/phase-5-fastwan.md"}
+{"id":"P2-Q02","language":"ja","query":"レシートの TP は商品名の一部ですか、それとも別の列ですか。","expected_project":"qwen3-vl-8b-llamacpp","preferred_path":"qwen3-vl-8b-llamacpp/results/phase-8-apple-vision-hybrid-ocr.md"}
+{"id":"P2-Q03","language":"en","query":"What caused the green mug to become almost as large as the bicycle basket?","expected_project":"flux2-klein-4b-stablediffusioncpp","preferred_path":"flux2-klein-4b-stablediffusioncpp/results/phase-3-assisted-compositing.md"}
+{"id":"P2-Q04","language":"zh","query":"麦克风多语言字幕从说完到完整显示，平均需要等多久？","expected_project":"whisper-large-v3-turbo-whispercpp","preferred_path":"whisper-large-v3-turbo-whispercpp/results/phase-4d-microphone-multilingual.md"}
+{"id":"P2-Q05","language":"ja","query":"Super TAE の比較動画が生成されなかった理由は何ですか。","expected_project":"wan2.2-ti2v-5b-stablediffusioncpp","preferred_path":"wan2.2-ti2v-5b-stablediffusioncpp/results/phase-5-super-tae-compatibility.md"}
+{"id":"P2-Q06","language":"en","query":"Did four concurrent multimodal requests substantially improve throughput, and what happened to latency?","expected_project":"qwen3-vl-8b-llamacpp","preferred_path":"qwen3-vl-8b-llamacpp/results/phase-14-concurrency-scaling.md"}
+{"id":"P2-Q07","language":"zh","query":"第一个文字模型在 8192 token 上下文测试时，处理速度是多少？","expected_project":"qwen3-14b-llamacpp","preferred_path":"qwen3-14b-llamacpp/results/phase-3-context-benchmark.md"}
+{"id":"P2-Q08","language":"zh","query":"票据日期为什么不能只信模型输出，而必须加确定性校验？","expected_project":"qwen3-vl-8b-llamacpp","preferred_path":"qwen3-vl-8b-llamacpp/results/phase-8-apple-vision-hybrid-ocr.md"}

@@ -1,0 +1,25 @@
+Recorded: 2026-09-06 (Asia/Tokyo)
+Purpose: local consented voice cloning on Apple Silicon
+
+Original model: Qwen/Qwen3-TTS-12Hz-0.6B-Base
+MLX repository: mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16
+Pinned revision: 1eccf1cb2519b5a4e8a95b5f0544f3303568164f
+Format: MLX safetensors, BF16
+License: Apache-2.0
+Model directory size: about 2.4 GiB as reported by du
+
+Main model file: model.safetensors
+Main model bytes: 1829344448
+Main model SHA-256: d7c7ed3e3464e3e59de0f955b3755891fa8319ff061c3f0307fe2e1343bc122d
+
+Speech tokenizer file: speech_tokenizer/model.safetensors
+Speech tokenizer bytes: 682293092
+Speech tokenizer SHA-256: 836b7b357f5ea43e889936a3709af68dfe3751881acefe4ecf0dbd30ba571258
+
+Hugging Face/Xet cache root: ~/Documents/AI-Models/tts/.huggingface
+Local model metadata cache: ~/Documents/AI-Models/tts/qwen3-tts-0.6b-base-mlx/.cache/huggingface
+Download verification: PASS
+
+Original model: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
+MLX model: https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-Base-bf16
+MLX-Audio: https://github.com/Blaizzy/mlx-audio

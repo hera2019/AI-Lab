@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+build*/
+models/
+worktrees/
+results/generated/
+results/tmp/
+
+# ── 2026-09-09 补充（公开前审计）──
+.pnpm-store/
+node_modules/

@@ -1,0 +1,4 @@
+{"id":"RAG-Q01","language":"zh","question":"为什么猫眨眼的测试最后只能算部分成功？","answerable":true,"expected_project":"wan2.2-ti2v-5b-stablediffusioncpp","required_all":[],"required_any":["没有重新睁开","没能重新睁开","未能重新睁开","未重新睁开","没有再次睁开","没有再睁开","没有完成重新睁开","未完成重新睁开"]}
+{"id":"RAG-Q02","language":"ja","question":"レシートの TP は商品名の一部ですか、それとも別の列ですか。","answerable":true,"expected_project":"qwen3-vl-8b-llamacpp","required_all":["TP"],"required_any":["別の列","別列","独立した列","別のカラム","独立した","商品名の一部ではない"]}
+{"id":"RAG-Q03","language":"en","question":"Did four concurrent multimodal requests substantially improve throughput, and what happened to average latency?","answerable":true,"expected_project":"qwen3-vl-8b-llamacpp","required_all":["8.2","16.79"],"required_any":[]}
+{"id":"RAG-Q04","language":"zh","question":"Hera 的 Mac Studio 是在哪家商店购买的，当时准确价格是多少？","answerable":false,"expected_project":null,"required_all":[],"required_any":[]}

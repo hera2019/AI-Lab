@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"q1\": 12,\n  \"q2\": 18,\n  \"q3\": 15,\n  \"q4\": 27,\n  \"q2_to_q3_decreased\": true\n}"
+      }
+    }
+  ],
+  "created": 1788201435,
+  "model": "qwen3-vl-8b",
+  "system_fingerprint": "b10706-0190529ec",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 52,
+    "prompt_tokens": 1039,
+    "total_tokens": 1091,
+    "prompt_tokens_details": {
+      "cached_tokens": 21
+    }
+  },
+  "id": "chatcmpl-Kon9oiYfYfWia1fMBw03eNMugTn0ntob",
+  "timings": {
+    "cache_n": 21,
+    "prompt_n": 1018,
+    "prompt_ms": 3757.472,
+    "prompt_per_token_ms": 3.6910333988212183,
+    "prompt_per_second": 270.92683591521103,
+    "predicted_n": 52,
+    "predicted_ms": 1055.394,
+    "predicted_per_token_ms": 20.694,
+    "predicted_per_second": 48.323185464385816
+  }
+}

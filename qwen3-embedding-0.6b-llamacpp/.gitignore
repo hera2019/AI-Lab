@@ -1,0 +1,11 @@
+.DS_Store
+*.part
+*.tmp
+__pycache__/
+worktrees/
+results/*.log
+
+# ── 2026-09-09 补充（公开前审计）──
+build/
+build-*/
+.cache/

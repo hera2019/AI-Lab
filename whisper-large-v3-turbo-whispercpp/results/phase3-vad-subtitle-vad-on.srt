@@ -1,0 +1,12 @@
+1
+00:00:00,960 --> 00:00:03,000
+ Welcome to the weekly project update.
+
+2
+00:00:05,090 --> 00:00:06,990
+ The design review begins at 10.30.
+
+3
+00:00:08,160 --> 00:00:10,830
+ Please send your comments by Friday.
+

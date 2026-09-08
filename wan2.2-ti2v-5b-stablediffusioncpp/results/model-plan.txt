@@ -1,0 +1,46 @@
+Recorded: 2026-09-05 Asia/Tokyo
+
+Wan2.2 TI2V 5B diffusion model
+Repository: QuantStack/Wan2.2-TI2V-5B-GGUF
+Revision: 57437632ddd08bdcbd1508c866aa22e126ed51d2
+File: Wan2.2-TI2V-5B-Q4_K_M.gguf
+Bytes: 3433116000
+SHA-256: 95b19697b7f98e65b0a543640e9ca7b4dfec32e2a6e3731e8e10708be52655e2
+
+UMT5-XXL text encoder
+Repository: city96/umt5-xxl-encoder-gguf
+Revision: b535255bee98c2b0a59ea7c0ae2dcd0c6657b3b7
+File: umt5-xxl-encoder-Q5_K_M.gguf
+Bytes: 4145878880
+SHA-256: eaea358bb438c5d211721a4feecc162000e3636e9cb96f51e216f1f44ebd12ce
+
+Wan2.2 VAE
+Repository: Comfy-Org/Wan_2.2_ComfyUI_Repackaged
+Revision: c4f60d30c55a624e35427060fdd217579a6c1d77
+File: split_files/vae/wan2.2_vae.safetensors
+Bytes: 1409400960
+SHA-256: e40321bd36b9709991dae2530eb4ac303dd168276980d3e9bc4b6e2b75fed156
+
+Wan2.2 TI2V 5B TAEHV (fast, lower-quality diagnostic decoder)
+Repository: madebyollin/taehv
+Revision: 011dfc2112197741c540e0bdd5b7b67bcc930771
+File: safetensors/taew2_2.safetensors
+Bytes: 22848048
+SHA-256: b84609b2a133d48434bd9636bfcb44bf05168dc436e2d3cecf26256faa1f5325
+
+Wan2.2 TI2V 5B TAEHV Super (larger, higher-quality tiny autoencoder)
+Repository: madebyollin/taehv
+Revision: 011dfc2112197741c540e0bdd5b7b67bcc930771
+File: safetensors/taew2_2_super.safetensors
+Bytes: 40986488
+SHA-256: cf6d8bdadb77d9f9741ae28b5b4659bb74cf9b0be6d08fc4afed3cb50c39364c
+
+FastWan2.2 TI2V 5B distilled diffusion model
+Repository: Green-Sky/FastWan2.2-TI2V-5B-FullAttn-GGUF
+Revision: 3e8fe5537b1200654868aa24ea8d0f4012fb3a1e
+File: FastWan2.2-TI2V-5B-q8_0.gguf
+Bytes: 5412844128
+SHA-256: b62f50ff87c4dfa2910c6883d45015e05b709366581698b302e259e7f25c9208
+Purpose: 3-step LCM speed/quality comparison; community distilled model, not an official Wan-AI release
+
+Exact total: 14465074504 bytes (13.47 GiB)

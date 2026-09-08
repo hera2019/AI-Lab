@@ -1,0 +1,8 @@
+init: found 1 capture devices:
+init:    - Capture device #0: 'OpenFit by Shokz'
+init: attempt to open default capture device ...
+init: obtained spec for input device (SDL Id = 2):
+init:     - sample rate:       16000
+init:     - format:            33056 (required: 33056)
+init:     - channels:          1 (required: 1)
+init:     - samples per frame: 1024

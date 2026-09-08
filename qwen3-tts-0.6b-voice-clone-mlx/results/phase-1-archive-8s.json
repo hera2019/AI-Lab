@@ -1,0 +1,22 @@
+{
+  "synthetic_audio": true,
+  "consent": "self_or_explicitly_authorized",
+  "model": "~/Documents/AI-Models/tts/qwen3-tts-0.6b-base-mlx",
+  "reference_audio": "~/Documents/AI-Lab/qwen3-tts-0.6b-voice-clone-mlx/private/reference/archive-zh-8.8s.wav",
+  "reference_text": "今天是二零二六年九月三日，会议在下午三点十五分开始，订单号是 A 七三一。",
+  "reference_audio_seconds": 8.826,
+  "target_text": "你好，这是一次完全在本地完成的声音克隆实验。这句话从来没有在参考录音里出现过。",
+  "language": "chinese",
+  "seed": 260906,
+  "output": "~/Documents/AI-Lab/qwen3-tts-0.6b-voice-clone-mlx/results/generated/phase-1-archive-8s-zh-synthetic.wav",
+  "sample_rate": 24000,
+  "samples": 197760,
+  "audio_seconds": 8.24,
+  "load_seconds": 2.1994558329461142,
+  "generation_seconds": 5.880085125099868,
+  "total_seconds": 8.08741424989421,
+  "standard_rtf_processing_per_audio": 0.7136025637257121,
+  "realtime_speedup": 1.4013402569337892,
+  "mlx_peak_memory_bytes": 7581664929,
+  "process_max_rss_bytes": 2227191808
+}

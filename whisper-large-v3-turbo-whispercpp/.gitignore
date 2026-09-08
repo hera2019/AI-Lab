@@ -1,0 +1,20 @@
+.DS_Store
+.cache/
+tmp/
+*.tmp
+*.part
+
+# 模型权重必须保存在项目外
+*.bin
+*.gguf
+*.mlmodelc/
+
+# ── 2026-09-09 补充（公开前审计）──
+worktrees/
+build/
+build-*/
+# 真人麦克风录音不入库
+results/microphone-*/segments/
+results/microphone-*/runs/
+results/microphone-*/live-*/
+*.m4a

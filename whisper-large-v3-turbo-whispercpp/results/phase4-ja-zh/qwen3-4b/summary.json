@@ -1,0 +1,42 @@
+{
+  "audio": "~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/tests/fixtures/audio/asr-ja-001.wav",
+  "audio_duration_seconds": 10.153438,
+  "whisper_model": "~/Documents/AI-Models/whispercpp/ggml-large-v3-turbo-q5_0.bin",
+  "translation_model": "~/Documents/AI-Models/huggingface/models--Qwen--Qwen3-4B-GGUF/blobs/7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "japanese_transcription": {
+    "mode": "transcribe-ja",
+    "translate_flag": false,
+    "exit_code": 0,
+    "text": "今日は2026年9月2日です。会議は午後3時15分に始まります。注文番号はA731です。",
+    "wall_seconds": 1.1713055410073139,
+    "wall_realtime_factor": 0.11536048587752384,
+    "whisper_total_ms": 1001.03,
+    "whisper_realtime_factor": 0.09859025090811604,
+    "max_rss_bytes": 868139008,
+    "metal_detected": true
+  },
+  "whisper_builtin_english_translation": {
+    "mode": "whisper-translate-en",
+    "translate_flag": true,
+    "exit_code": 0,
+    "text": "今日は2026年9月2日です 会議は午後3時15分に始まります 注文番号はA731です",
+    "wall_seconds": 0.908988666953519,
+    "wall_realtime_factor": 0.08952520978150642,
+    "whisper_total_ms": 811.64,
+    "whisper_realtime_factor": 0.07993745566772556,
+    "max_rss_bytes": 864108544,
+    "metal_detected": true
+  },
+  "chinese_translation": {
+    "mode": "translate-ja-text-to-zh",
+    "exit_code": 0,
+    "text": "今天是2026年9月2日。会议于下午3点15分开始。订单号是A731。",
+    "wall_seconds": 2.867478250002023,
+    "wall_realtime_factor": 0.2824145131926765,
+    "max_rss_bytes": 2876801024,
+    "metal_detected": false
+  },
+  "ja_to_zh_pipeline_wall_seconds": 4.038783791009337,
+  "ja_to_zh_pipeline_realtime_factor": 0.39777499907020036,
+  "ja_to_zh_pipeline_faster_than_realtime": true
+}

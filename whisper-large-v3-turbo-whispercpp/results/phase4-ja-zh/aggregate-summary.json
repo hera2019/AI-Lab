@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-02",
+  "audio_duration_seconds": 10.153438,
+  "pipeline": "Japanese speech -> Whisper Japanese transcription -> Qwen Simplified Chinese translation",
+  "whisper_model": "ggml-large-v3-turbo-q5_0.bin",
+  "translation_model": "Qwen3-4B-Q4_K_M.gguf",
+  "runs": 3,
+  "pipeline_seconds": [
+    4.038783791009337,
+    3.368341625027824,
+    3.0130944580305368
+  ],
+  "average_asr_seconds": 1.027351457994276,
+  "average_translation_seconds": 2.4460551666949564,
+  "average_pipeline_seconds": 3.4734066246892326,
+  "average_pipeline_realtime_factor": 0.34209167620753017,
+  "average_speed_multiple": 2.923192365828164,
+  "outputs_identical": true,
+  "critical_checks_passed_each_run": "5/5",
+  "output": "今天是2026年9月2日。会议于下午3点15分开始。订单号是A731。",
+  "max_whisper_rss_bytes": 868139008,
+  "max_translation_rss_bytes": 2921938944,
+  "swap_events": 0,
+  "llama_bench": {
+    "backend": "MTL,BLAS",
+    "prompt_tokens_per_second": 669.31,
+    "generation_tokens_per_second": 76.94
+  },
+  "batch_faster_than_realtime": true,
+  "live_streaming_validated": false
+}

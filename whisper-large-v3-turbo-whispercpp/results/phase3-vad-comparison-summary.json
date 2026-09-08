@@ -1,0 +1,404 @@
+{
+  "vad_model": "~/Documents/AI-Models/whispercpp/ggml-silero-v6.2.0.bin",
+  "vad_model_size_bytes": 885098,
+  "cases": [
+    {
+      "id": "VAD-PURE-30",
+      "vad_enabled": false,
+      "input": "tests/fixtures/audio/phase3-silence/pure-silence-30s.wav",
+      "duration_seconds": 30.0,
+      "exit_code": 0,
+      "actual": "Thank you.",
+      "content_pass": false,
+      "semantic_marker_checks": null,
+      "semantic_markers_passed": null,
+      "semantic_markers_total": null,
+      "json_segment_count": 1,
+      "srt_cues": [
+        {
+          "index": 1,
+          "start_seconds": 0.0,
+          "end_seconds": 29.98,
+          "text": "Thank you."
+        }
+      ],
+      "subtitle_checks": null,
+      "wall_seconds": 0.9166067499900237,
+      "wall_realtime_factor": 0.030553558333000788,
+      "whisper_total_ms": 804.53,
+      "whisper_realtime_factor": 0.026817666666666667,
+      "max_rss_bytes": 867713024,
+      "metal_log_detected": true,
+      "vad_log_detected": true
+    },
+    {
+      "id": "VAD-PURE-30",
+      "vad_enabled": true,
+      "input": "tests/fixtures/audio/phase3-silence/pure-silence-30s.wav",
+      "duration_seconds": 30.0,
+      "exit_code": 0,
+      "actual": "",
+      "content_pass": true,
+      "semantic_marker_checks": null,
+      "semantic_markers_passed": null,
+      "semantic_markers_total": null,
+      "json_segment_count": 0,
+      "srt_cues": [],
+      "subtitle_checks": null,
+      "wall_seconds": 0.3853397499769926,
+      "wall_realtime_factor": 0.01284465833256642,
+      "whisper_total_ms": 288.98,
+      "whisper_realtime_factor": 0.009632666666666668,
+      "max_rss_bytes": 780910592,
+      "metal_log_detected": true,
+      "vad_log_detected": true
+    },
+    {
+      "id": "VAD-PADDED-LONG",
+      "vad_enabled": false,
+      "input": "tests/fixtures/audio/phase3-silence/english-with-30s-edge-silence.wav",
+      "duration_seconds": 67.291,
+      "exit_code": 0,
+      "actual": "Thank you.\nToday is September 2nd, 2026. The meeting starts at 3.15pm. The order number is A731.\nThank you.",
+      "content_pass": false,
+      "semantic_marker_checks": null,
+      "semantic_markers_passed": null,
+      "semantic_markers_total": null,
+      "json_segment_count": 3,
+      "srt_cues": [
+        {
+          "index": 1,
+          "start_seconds": 0.0,
+          "end_seconds": 29.98,
+          "text": "Thank you."
+        },
+        {
+          "index": 2,
+          "start_seconds": 30.0,
+          "end_seconds": 36.94,
+          "text": "Today is September 2nd, 2026. The meeting starts at 3.15pm. The order number is A731."
+        },
+        {
+          "index": 3,
+          "start_seconds": 60.0,
+          "end_seconds": 61.0,
+          "text": "Thank you."
+        }
+      ],
+      "subtitle_checks": null,
+      "wall_seconds": 2.3316544580156915,
+      "wall_realtime_factor": 0.034650316654763515,
+      "whisper_total_ms": 2220.39,
+      "whisper_realtime_factor": 0.03299683464356303,
+      "max_rss_bytes": 876756992,
+      "metal_log_detected": true,
+      "vad_log_detected": true
+    },
+    {
+      "id": "VAD-PADDED-LONG",
+      "vad_enabled": true,
+      "input": "tests/fixtures/audio/phase3-silence/english-with-30s-edge-silence.wav",
+      "duration_seconds": 67.291,
+      "exit_code": 0,
+      "actual": "Today is September 2, 2026.\nThe meeting starts at 3.15 p.m.\nThe order number is A731.",
+      "content_pass": true,
+      "semantic_marker_checks": null,
+      "semantic_markers_passed": null,
+      "semantic_markers_total": null,
+      "json_segment_count": 3,
+      "srt_cues": [
+        {
+          "index": 1,
+          "start_seconds": 30.02,
+          "end_seconds": 32.79,
+          "text": "Today is September 2, 2026."
+        },
+        {
+          "index": 2,
+          "start_seconds": 33.15,
+          "end_seconds": 35.15,
+          "text": "The meeting starts at 3.15 p.m."
+        },
+        {
+          "index": 3,
+          "start_seconds": 35.17,
+          "end_seconds": 36.95,
+          "text": "The order number is A731."
+        }
+      ],
+      "subtitle_checks": null,
+      "wall_seconds": 1.0652566670323722,
+      "wall_realtime_factor": 0.015830596469548264,
+      "whisper_total_ms": 964.42,
+      "whisper_realtime_factor": 0.014332080070143109,
+      "max_rss_bytes": 870154240,
+      "metal_log_detected": true,
+      "vad_log_detected": true
+    },
+    {
+      "id": "VAD-SUBTITLE",
+      "vad_enabled": false,
+      "input": "tests/fixtures/audio/phase2-subtitles/subtitle-en-001.wav",
+      "duration_seconds": 12.036875,
+      "exit_code": 0,
+      "actual": "Welcome to the weekly project update.\nThe design review begins at 10:30.\nPlease send your comments by Friday.",
+      "content_pass": true,
+      "semantic_marker_checks": null,
+      "semantic_markers_passed": null,
+      "semantic_markers_total": null,
+      "json_segment_count": 3,
+      "srt_cues": [
+        {
+          "index": 1,
+          "start_seconds": 1.0,
+          "end_seconds": 5.12,
+          "text": "Welcome to the weekly project update."
+        },
+        {
+          "index": 2,
+          "start_seconds": 5.12,
+          "end_seconds": 9.16,
+          "text": "The design review begins at 10:30."
+        },
+        {
+          "index": 3,
+          "start_seconds": 9.16,
+          "end_seconds": 11.04,
+          "text": "Please send your comments by Friday."
+        }
+      ],
+      "subtitle_checks": {
+        "contains_all_sentences": true,
+        "valid_monotonic_timeline": true,
+        "alignment": [
+          {
+            "index": 1,
+            "matched": true,
+            "expected_start_seconds": 1.0,
+            "actual_start_seconds": 1.0,
+            "start_error_seconds": 0.0,
+            "expected_end_seconds": 3.099563,
+            "actual_end_seconds": 5.12,
+            "end_error_seconds": 2.0204370000000003,
+            "within_one_second": false
+          },
+          {
+            "index": 2,
+            "matched": true,
+            "expected_start_seconds": 5.099563,
+            "actual_start_seconds": 5.12,
+            "start_error_seconds": 0.02043700000000026,
+            "expected_end_seconds": 7.147188,
+            "actual_end_seconds": 9.16,
+            "end_error_seconds": 2.0128120000000003,
+            "within_one_second": false
+          },
+          {
+            "index": 3,
+            "matched": true,
+            "expected_start_seconds": 9.147188,
+            "actual_start_seconds": 9.16,
+            "start_error_seconds": 0.012812000000000268,
+            "expected_end_seconds": 11.036876,
+            "actual_end_seconds": 11.04,
+            "end_error_seconds": 0.0031239999999996826,
+            "within_one_second": true
+          }
+        ]
+      },
+      "wall_seconds": 0.8767765419906937,
+      "wall_realtime_factor": 0.07284087788489069,
+      "whisper_total_ms": 777.48,
+      "whisper_realtime_factor": 0.06459151565501843,
+      "max_rss_bytes": 864354304,
+      "metal_log_detected": true,
+      "vad_log_detected": true
+    },
+    {
+      "id": "VAD-SUBTITLE",
+      "vad_enabled": true,
+      "input": "tests/fixtures/audio/phase2-subtitles/subtitle-en-001.wav",
+      "duration_seconds": 12.036875,
+      "exit_code": 0,
+      "actual": "Welcome to the weekly project update.\nThe design review begins at 10.30.\nPlease send your comments by Friday.",
+      "content_pass": true,
+      "semantic_marker_checks": null,
+      "semantic_markers_passed": null,
+      "semantic_markers_total": null,
+      "json_segment_count": 3,
+      "srt_cues": [
+        {
+          "index": 1,
+          "start_seconds": 0.96,
+          "end_seconds": 3.0,
+          "text": "Welcome to the weekly project update."
+        },
+        {
+          "index": 2,
+          "start_seconds": 5.09,
+          "end_seconds": 6.99,
+          "text": "The design review begins at 10.30."
+        },
+        {
+          "index": 3,
+          "start_seconds": 8.16,
+          "end_seconds": 10.83,
+          "text": "Please send your comments by Friday."
+        }
+      ],
+      "subtitle_checks": {
+        "contains_all_sentences": true,
+        "valid_monotonic_timeline": true,
+        "alignment": [
+          {
+            "index": 1,
+            "matched": true,
+            "expected_start_seconds": 1.0,
+            "actual_start_seconds": 0.96,
+            "start_error_seconds": -0.040000000000000036,
+            "expected_end_seconds": 3.099563,
+            "actual_end_seconds": 3.0,
+            "end_error_seconds": -0.09956299999999985,
+            "within_one_second": true
+          },
+          {
+            "index": 2,
+            "matched": true,
+            "expected_start_seconds": 5.099563,
+            "actual_start_seconds": 5.09,
+            "start_error_seconds": -0.009562999999999988,
+            "expected_end_seconds": 7.147188,
+            "actual_end_seconds": 6.99,
+            "end_error_seconds": -0.15718799999999966,
+            "within_one_second": true
+          },
+          {
+            "index": 3,
+            "matched": true,
+            "expected_start_seconds": 9.147188,
+            "actual_start_seconds": 8.16,
+            "start_error_seconds": -0.9871879999999997,
+            "expected_end_seconds": 11.036876,
+            "actual_end_seconds": 10.83,
+            "end_error_seconds": -0.2068759999999994,
+            "within_one_second": true
+          }
+        ]
+      },
+      "wall_seconds": 0.9314540000050329,
+      "wall_realtime_factor": 0.07738337400737591,
+      "whisper_total_ms": 830.87,
+      "whisper_realtime_factor": 0.06902705228724233,
+      "max_rss_bytes": 869908480,
+      "metal_log_detected": true,
+      "vad_log_detected": true
+    },
+    {
+      "id": "VAD-MIXED-LANGUAGE",
+      "vad_enabled": false,
+      "input": "tests/fixtures/audio/asr-mix-001.wav",
+      "duration_seconds": 8.424875,
+      "exit_code": 0,
+      "actual": "項目代號是海峰7號 次の会議は東京で開きます。",
+      "content_pass": false,
+      "semantic_marker_checks": {
+        "海风": false,
+        "東京": true,
+        "Friday": false
+      },
+      "semantic_markers_passed": 1,
+      "semantic_markers_total": 3,
+      "json_segment_count": 1,
+      "srt_cues": [
+        {
+          "index": 1,
+          "start_seconds": 0.0,
+          "end_seconds": 5.42,
+          "text": "項目代號是海峰7號 次の会議は東京で開きます。"
+        }
+      ],
+      "subtitle_checks": null,
+      "wall_seconds": 0.933827749977354,
+      "wall_realtime_factor": 0.1108417335541897,
+      "whisper_total_ms": 819.92,
+      "whisper_realtime_factor": 0.09732132524221428,
+      "max_rss_bytes": 865976320,
+      "metal_log_detected": true,
+      "vad_log_detected": true
+    },
+    {
+      "id": "VAD-MIXED-LANGUAGE",
+      "vad_enabled": true,
+      "input": "tests/fixtures/audio/asr-mix-001.wav",
+      "duration_seconds": 8.424875,
+      "exit_code": 0,
+      "actual": "项目代号是海峰7号。\n次の会議は東京で開きます。",
+      "content_pass": false,
+      "semantic_marker_checks": {
+        "海风": false,
+        "東京": true,
+        "Friday": false
+      },
+      "semantic_markers_passed": 1,
+      "semantic_markers_total": 3,
+      "json_segment_count": 2,
+      "srt_cues": [
+        {
+          "index": 1,
+          "start_seconds": 0.0,
+          "end_seconds": 2.24,
+          "text": "项目代号是海峰7号。"
+        },
+        {
+          "index": 2,
+          "start_seconds": 2.89,
+          "end_seconds": 5.41,
+          "text": "次の会議は東京で開きます。"
+        }
+      ],
+      "subtitle_checks": null,
+      "wall_seconds": 0.9263367499806918,
+      "wall_realtime_factor": 0.10995258089653459,
+      "whisper_total_ms": 818.38,
+      "whisper_realtime_factor": 0.09713853321265895,
+      "max_rss_bytes": 868040704,
+      "metal_log_detected": true,
+      "vad_log_detected": true
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "VAD-PURE-30",
+      "off_wall_seconds": 0.9166067499900237,
+      "on_wall_seconds": 0.3853397499769926,
+      "speedup_off_over_on": 2.378697629935015,
+      "off_actual": "Thank you.",
+      "on_actual": ""
+    },
+    {
+      "id": "VAD-PADDED-LONG",
+      "off_wall_seconds": 2.3316544580156915,
+      "on_wall_seconds": 1.0652566670323722,
+      "speedup_off_over_on": 2.188819399282703,
+      "off_actual": "Thank you.\nToday is September 2nd, 2026. The meeting starts at 3.15pm. The order number is A731.\nThank you.",
+      "on_actual": "Today is September 2, 2026.\nThe meeting starts at 3.15 p.m.\nThe order number is A731."
+    },
+    {
+      "id": "VAD-SUBTITLE",
+      "off_wall_seconds": 0.8767765419906937,
+      "on_wall_seconds": 0.9314540000050329,
+      "speedup_off_over_on": 0.9412988102321277,
+      "off_actual": "Welcome to the weekly project update.\nThe design review begins at 10:30.\nPlease send your comments by Friday.",
+      "on_actual": "Welcome to the weekly project update.\nThe design review begins at 10.30.\nPlease send your comments by Friday."
+    },
+    {
+      "id": "VAD-MIXED-LANGUAGE",
+      "off_wall_seconds": 0.933827749977354,
+      "on_wall_seconds": 0.9263367499806918,
+      "speedup_off_over_on": 1.008086692012185,
+      "off_actual": "項目代號是海峰7號 次の会議は東京で開きます。",
+      "on_actual": "项目代号是海峰7号。\n次の会議は東京で開きます。"
+    }
+  ],
+  "all_commands_ok": true
+}

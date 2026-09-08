@@ -1,0 +1,49 @@
+Recorded: 2026-09-03 Asia/Tokyo
+
+Hardware
+--------
+Model: Mac Studio (Mac14,13)
+Chip: Apple M2 Max
+CPU cores: 12 (8 performance + 4 efficiency)
+Unified memory: 32 GB (34,359,738,368 bytes)
+Architecture: arm64
+
+Software
+--------
+macOS: 26.6.2 (25G83)
+AppleClang: 21.0.0 (clang-2100.1.1.101)
+CMake: 4.4.2
+
+stable-diffusion.cpp
+--------------------
+Source branch: master tracking origin/master
+Commit: 6b3edaaf32cc19e5bb2d819c788bd557eddc8eba
+Commit date: 2026-08-31T00:11:38+08:00
+Commit subject: feat: generalize temporal tiling across video VAEs (#1926)
+Build type: Release
+Metal build option: ON
+Optional server frontend: OFF
+sd-cli size: 58,191,928 bytes
+sd-server size: 58,660,008 bytes
+Source working tree: clean
+Frontend submodule working tree: clean
+
+Runtime devices
+---------------
+MTL0: Apple M2 Max
+BLAS: Accelerate
+CPU: Apple M2 Max
+Metal embedded library: loaded successfully
+Metal unified memory: true
+Metal recommended maximum working set: 26,800.60 MB
+Metal tensor API: unavailable on pre-M5/pre-A19; normal for M2 Max
+
+Disk
+----
+Free before model download: 29,211,033,600 bytes (27.20 GiB)
+Free after final verification: 23,979,044,864 bytes (22.33 GiB)
+Exact model file bytes: 5,207,178,964 bytes (4.85 GiB)
+Allocated model directory size: 5,218,975,744 bytes (4.86 GiB)
+
+Free-space measurements can also move because macOS changes caches and purgeable
+space in the background. Exact model file sizes are the authoritative download total.

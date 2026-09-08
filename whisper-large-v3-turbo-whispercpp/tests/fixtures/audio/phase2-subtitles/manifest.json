@@ -1,0 +1,36 @@
+{
+  "id": "SUB-EN-001",
+  "purpose": "timestamp and SRT/VTT validation with known pauses",
+  "generator": "macOS say + FFmpeg",
+  "voice": "Samantha",
+  "file": "tests/fixtures/audio/phase2-subtitles/subtitle-en-001.wav",
+  "audio_format": "16000 Hz mono PCM s16le WAV",
+  "duration_seconds": 12.036875,
+  "sha256": "f4ba62d526f165f48f50625c00d4f44f224a9f78f265e45647fed4c9f60db02b",
+  "leading_silence_seconds": 1.0,
+  "between_silence_seconds": 2.0,
+  "trailing_silence_seconds": 1.0,
+  "timeline": [
+    {
+      "index": 1,
+      "text": "Welcome to the weekly project update.",
+      "expected_start_seconds": 1.0,
+      "expected_end_seconds": 3.099563,
+      "speech_duration_seconds": 2.099563
+    },
+    {
+      "index": 2,
+      "text": "The design review begins at ten thirty.",
+      "expected_start_seconds": 5.099563,
+      "expected_end_seconds": 7.147188,
+      "speech_duration_seconds": 2.047625
+    },
+    {
+      "index": 3,
+      "text": "Please send your comments by Friday.",
+      "expected_start_seconds": 9.147188,
+      "expected_end_seconds": 11.036876,
+      "speech_duration_seconds": 1.889688
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "speech_source": "tests/fixtures/audio/asr-en-001.wav",
+  "speech_expected": "Today is September second, twenty twenty-six. The meeting starts at three fifteen P.M. The order number is A seven three one.",
+  "cases": [
+    {
+      "id": "SIL-PURE-10",
+      "file": "tests/fixtures/audio/phase3-silence/pure-silence-10s.wav",
+      "purpose": "no speech; exact digital silence",
+      "size_bytes": 320078,
+      "sha256": "eeae5c4c90de536fe309bd6b1062c1493a80703d6e5ac97a3c51c98980220f78",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "10.000000"
+        }
+      }
+    },
+    {
+      "id": "SIL-PURE-30",
+      "file": "tests/fixtures/audio/phase3-silence/pure-silence-30s.wav",
+      "purpose": "no speech; exact digital silence",
+      "size_bytes": 960078,
+      "sha256": "6aa4667416060c5dddd995287fb3f5f1ed791bdb7f109a35a13bd6c6853b3060",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "30.000000"
+        }
+      }
+    },
+    {
+      "id": "SIL-ROOM-15",
+      "file": "tests/fixtures/audio/phase3-silence/pink-room-tone-15s.wav",
+      "purpose": "no speech; low-level deterministic pink room tone",
+      "size_bytes": 480078,
+      "sha256": "6a6f2a71164380cc9b731e6de841a0415e06c5519aa491c35335e0a8b5df55b0",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "15.000000"
+        }
+      }
+    },
+    {
+      "id": "SIL-PADDED-SPEECH",
+      "file": "tests/fixtures/audio/phase3-silence/english-with-5s-edge-silence.wav",
+      "purpose": "known speech with 5 seconds of silence before and after",
+      "size_bytes": 553390,
+      "sha256": "34d5d1ed80f7dc2a3015bbe35dddb15710909f07f1ee0b5bb4b54031c2ea4f09",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "17.291000"
+        }
+      }
+    },
+    {
+      "id": "SIL-PADDED-LONG",
+      "file": "tests/fixtures/audio/phase3-silence/english-with-30s-edge-silence.wav",
+      "purpose": "known speech with 30 seconds of silence before and after",
+      "size_bytes": 2153390,
+      "sha256": "bd5858337f84a1bc1b3d9bef1768ba0c8bf6385b9441df626f7531e1461a41cd",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "67.291000"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "source": "tests/fixtures/audio/asr-en-001.wav",
+  "expected_text": "Today is September second, twenty twenty-six. The meeting starts at three fifteen P.M. The order number is A seven three one.",
+  "critical_values": [
+    "2026-09-02",
+    "15:15",
+    "A731"
+  ],
+  "noise": "deterministic FFmpeg pink noise, seed 731",
+  "snr_definition": "20*log10(weighted speech RMS / weighted noise RMS), measured over the full source duration",
+  "cases": [
+    {
+      "id": "NOISE-EN-20DB",
+      "file": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-20db.wav",
+      "target_snr_db": 20,
+      "calculated_snr_db": 20.0,
+      "speech_weight": 1.0,
+      "noise_weight": 0.1729978679655289,
+      "size_bytes": 233390,
+      "sha256": "30886f3e2c209d429a2eeb74c2e71673b39ce3009aff3b2f15e20006a318883c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "7.291000"
+        }
+      }
+    },
+    {
+      "id": "NOISE-EN-10DB",
+      "file": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-10db.wav",
+      "target_snr_db": 10,
+      "calculated_snr_db": 10.0,
+      "speech_weight": 0.9189597550929189,
+      "noise_weight": 0.5027328257087158,
+      "size_bytes": 233390,
+      "sha256": "df755aa631f54b18410fbd795d039d1f0afc03e749960e46c4e9b5b6fcf19159",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "7.291000"
+        }
+      }
+    },
+    {
+      "id": "NOISE-EN-0DB",
+      "file": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-0db.wav",
+      "target_snr_db": 0,
+      "calculated_snr_db": 1.928654933106574e-15,
+      "speech_weight": 0.6283812901151417,
+      "noise_weight": 1.0870862345934797,
+      "size_bytes": 233390,
+      "sha256": "644a2e304e085a8fa5a6995ca2769235ba2cfbf3acf7677609548a3b39883f52",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "pcm_s16le",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "duration": "7.291000"
+        }
+      }
+    }
+  ]
+}

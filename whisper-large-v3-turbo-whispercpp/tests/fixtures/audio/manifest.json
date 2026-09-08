@@ -1,0 +1,75 @@
+{
+  "generator": "macOS say + FFmpeg",
+  "purpose": "clean synthetic baseline; not a substitute for human recordings",
+  "cases": [
+    {
+      "id": "ASR-ZH-001",
+      "voice": "Tingting",
+      "language": "zh",
+      "text": "今天是二零二六年九月二日。会议将在下午三点十五分开始。订单编号是A七三一。",
+      "file": "asr-zh-001.wav",
+      "critical_values": [
+        "2026-09-02",
+        "15:15",
+        "A731"
+      ],
+      "duration_seconds": 8.608,
+      "sha256": "dcd980562d3ddd45671d6ed0446b3d12039b9d22c06642153afd35d0f038b5b2",
+      "audio_format": "16000 Hz mono PCM s16le WAV"
+    },
+    {
+      "id": "ASR-JA-001",
+      "voice": "Kyoko",
+      "language": "ja",
+      "text": "今日は二千二十六年九月二日です。会議は午後三時十五分に始まります。注文番号はエー七三一です。",
+      "file": "asr-ja-001.wav",
+      "critical_values": [
+        "2026-09-02",
+        "15:15",
+        "A731"
+      ],
+      "duration_seconds": 10.153,
+      "sha256": "6be7580b1a2de0435892b90ac12b48be4af2c0d62f69ef04592877522d365e89",
+      "audio_format": "16000 Hz mono PCM s16le WAV"
+    },
+    {
+      "id": "ASR-EN-001",
+      "voice": "Samantha",
+      "language": "en",
+      "text": "Today is September second, twenty twenty-six. The meeting starts at three fifteen P.M. The order number is A seven three one.",
+      "file": "asr-en-001.wav",
+      "critical_values": [
+        "2026-09-02",
+        "15:15",
+        "A731"
+      ],
+      "duration_seconds": 7.291,
+      "sha256": "e22083b18611bcaa34361b3c5860cba04c37b75ff859e96dc4b088a59dfdd4be",
+      "audio_format": "16000 Hz mono PCM s16le WAV"
+    },
+    {
+      "id": "ASR-MIX-001",
+      "voices": [
+        "Tingting",
+        "Kyoko",
+        "Samantha"
+      ],
+      "language": "zh+ja+en",
+      "text_segments": [
+        "项目代号是海风七号。",
+        "次の会議は東京で開きます。",
+        "Please upload the final report by Friday."
+      ],
+      "file": "asr-mix-001.wav",
+      "critical_values": [
+        "海风七号",
+        "東京",
+        "Friday"
+      ],
+      "duration_seconds": 8.425,
+      "sha256": "ec156accdbdfc02b7a8afc2df049b274936bb2d1aa8bf89e9de397b7775fa832",
+      "audio_format": "16000 Hz mono PCM s16le WAV",
+      "silence_between_segments_seconds": 0.6
+    }
+  ]
+}

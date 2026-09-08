@@ -1,0 +1,16 @@
+Recorded: 2026-09-06 (Asia/Tokyo)
+Hardware: Mac Studio
+Chip: Apple M2 Max
+Unified memory: 32 GB
+Architecture: arm64
+macOS: 26.6.2 (25G83)
+Python: 3.12.7 (isolated .venv)
+MLX: 0.32.2
+MLX-Audio: 0.5.1
+Transformers: 5.16.1
+Hugging Face Hub: 1.30.0
+Default MLX device: GPU
+Metal smoke calculation: PASS
+Installed packages compatibility check: PASS (55 packages)
+Project environment size: about 508 MiB
+Disk available after model download: about 125 GiB

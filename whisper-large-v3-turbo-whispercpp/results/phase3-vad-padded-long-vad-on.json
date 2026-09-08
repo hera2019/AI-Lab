@@ -1,0 +1,65 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "large",
+		"multilingual": true,
+		"vocab": 51866,
+		"audio": {
+			"ctx": 1500,
+			"state": 1280,
+			"head": 20,
+			"layer": 32
+		},
+		"text": {
+			"ctx": 448,
+			"state": 1280,
+			"head": 20,
+			"layer": 4
+		},
+		"mels": 128,
+		"ftype": 8
+	},
+	"params": {
+		"model": "~/Documents/AI-Models/whispercpp/ggml-large-v3-turbo-q5_0.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:30,020",
+				"to": "00:00:32,790"
+			},
+			"offsets": {
+				"from": 30020,
+				"to": 32790
+			},
+			"text": " Today is September 2, 2026."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,150",
+				"to": "00:00:35,150"
+			},
+			"offsets": {
+				"from": 33150,
+				"to": 35150
+			},
+			"text": " The meeting starts at 3.15 p.m."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,170",
+				"to": "00:00:36,950"
+			},
+			"offsets": {
+				"from": 35170,
+				"to": 36950
+			},
+			"text": " The order number is A731."
+		}
+	]
+}

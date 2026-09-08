@@ -1,0 +1,210 @@
+{
+  "fixture": {
+    "source": "tests/fixtures/audio/asr-en-001.wav",
+    "expected_text": "Today is September second, twenty twenty-six. The meeting starts at three fifteen P.M. The order number is A seven three one.",
+    "critical_values": [
+      "2026-09-02",
+      "15:15",
+      "A731"
+    ],
+    "noise": "deterministic FFmpeg pink noise, seed 731",
+    "snr_definition": "20*log10(weighted speech RMS / weighted noise RMS), measured over the full source duration",
+    "cases": [
+      {
+        "id": "NOISE-EN-20DB",
+        "file": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-20db.wav",
+        "target_snr_db": 20,
+        "calculated_snr_db": 20.0,
+        "speech_weight": 1.0,
+        "noise_weight": 0.1729978679655289,
+        "size_bytes": 233390,
+        "sha256": "30886f3e2c209d429a2eeb74c2e71673b39ce3009aff3b2f15e20006a318883c",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "sample_rate": "16000",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "7.291000"
+          }
+        }
+      },
+      {
+        "id": "NOISE-EN-10DB",
+        "file": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-10db.wav",
+        "target_snr_db": 10,
+        "calculated_snr_db": 10.0,
+        "speech_weight": 0.9189597550929189,
+        "noise_weight": 0.5027328257087158,
+        "size_bytes": 233390,
+        "sha256": "df755aa631f54b18410fbd795d039d1f0afc03e749960e46c4e9b5b6fcf19159",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "sample_rate": "16000",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "7.291000"
+          }
+        }
+      },
+      {
+        "id": "NOISE-EN-0DB",
+        "file": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-0db.wav",
+        "target_snr_db": 0,
+        "calculated_snr_db": 1.928654933106574e-15,
+        "speech_weight": 0.6283812901151417,
+        "noise_weight": 1.0870862345934797,
+        "size_bytes": 233390,
+        "sha256": "644a2e304e085a8fa5a6995ca2769235ba2cfbf3acf7677609548a3b39883f52",
+        "probe": {
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "pcm_s16le",
+              "sample_rate": "16000",
+              "channels": 1
+            }
+          ],
+          "format": {
+            "duration": "7.291000"
+          }
+        }
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "NOISE-EN-CLEAN",
+      "snr_db": null,
+      "input": "tests/fixtures/audio/asr-en-001.wav",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2, 2026. The meeting starts at 3.15pm. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_passed": 4,
+      "semantic_total": 4,
+      "semantic_pass": true,
+      "wall_seconds": 1.3550083749578334,
+      "wall_realtime_factor": 0.18584671169357198,
+      "whisper_total_ms": 1173.98,
+      "whisper_realtime_factor": 0.16101769304622138,
+      "max_rss_bytes": 840073216,
+      "metal_log_detected": true
+    },
+    {
+      "id": "NOISE-EN-20DB",
+      "snr_db": 20,
+      "input": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-20db.wav",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2nd, 2026. The meeting starts at 3:15 PM. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_passed": 4,
+      "semantic_total": 4,
+      "semantic_pass": true,
+      "wall_seconds": 0.8657740420312621,
+      "wall_realtime_factor": 0.11874558250325909,
+      "whisper_total_ms": 771.15,
+      "whisper_realtime_factor": 0.10576738444657796,
+      "max_rss_bytes": 864452608,
+      "metal_log_detected": true
+    },
+    {
+      "id": "NOISE-EN-10DB",
+      "snr_db": 10,
+      "input": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-10db.wav",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2nd, 2026. The meeting starts at 3:15 PM. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_passed": 4,
+      "semantic_total": 4,
+      "semantic_pass": true,
+      "wall_seconds": 0.8813407500274479,
+      "wall_realtime_factor": 0.12088064051946892,
+      "whisper_total_ms": 780.71,
+      "whisper_realtime_factor": 0.10707859004251817,
+      "max_rss_bytes": 866189312,
+      "metal_log_detected": true
+    },
+    {
+      "id": "NOISE-EN-0DB",
+      "snr_db": 0,
+      "input": "tests/fixtures/audio/phase3-noise/english-pink-noise-snr-0db.wav",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2nd, 2036. The meeting starts at 3:15 p.m. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 10,
+        "reference_units": 23,
+        "error_rate": 0.43478260869565216,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": false,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_passed": 3,
+      "semantic_total": 4,
+      "semantic_pass": false,
+      "wall_seconds": 0.9187241249601357,
+      "wall_realtime_factor": 0.12600797215198678,
+      "whisper_total_ms": 817.03,
+      "whisper_realtime_factor": 0.1120600740639144,
+      "max_rss_bytes": 866500608,
+      "metal_log_detected": true
+    }
+  ],
+  "all_commands_ok": true
+}

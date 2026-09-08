@@ -1,0 +1,57 @@
+
+
+Loading model... 
+
+▄▄ ▄▄
+██ ██
+██ ██  ▀▀█▄ ███▄███▄  ▀▀█▄    ▄████ ████▄ ████▄
+██ ██ ▄█▀██ ██ ██ ██ ▄█▀██    ██    ██ ██ ██ ██
+██ ██ ▀█▄██ ██ ██ ██ ▀█▄██ ██ ▀████ ████▀ ████▀
+                                    ██    ██
+                                    ▀▀    ▀▀
+
+build      : b10700-bebc9350e
+model      : ~/Documents/AI-Models/huggingface/models--Qwen--Qwen3-0.6B-GGUF/blobs/9465e63a22add5354d9bb4b99e90117043c7124007664907259bd16d043bb031
+ftype      : Q8_0
+modalities : text
+
+available commands:
+  /exit or Ctrl+C     stop or exit
+  /regen              regenerate the last response
+  /clear              clear the chat history
+  /read <file>        add a text file
+  /glob <pattern>     add text files using globbing pattern
+
+
+
+> 请把下面的日文逐句翻译成简体中文。
+要求：不得省略、合并或添加信息；准确区分上午和下午；保留所有日期、时间和编号；只输出中文译文，不要解释。
+
+日文：
+今日は2026年9月2日です。会議は午後3時15分に始まります。注文番号はA731です。
+今日は2026年9月2日です。会議は午前3時15分から始めます。注文番号はA731です。
+
+[ Prompt: 2998.0 t/s | Generation: 177.3 t/s ]
+
+
+Exiting...
+real 1.22
+user 1.46
+sys 0.18
+           998735872  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               25655  page reclaims
+               38617  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  57  messages sent
+                  54  messages received
+                   0  signals received
+                  13  voluntary context switches
+                5176  involuntary context switches
+         27753154543  instructions retired
+          5196354190  cycles elapsed
+           306169224  peak memory footprint

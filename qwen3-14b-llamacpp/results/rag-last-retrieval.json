@@ -1,0 +1,40 @@
+{
+  "question": "这些资料的主要结论是什么？",
+  "sources": [
+    {
+      "id": "S1",
+      "score": 15.696428,
+      "path": "results/phase-7-local-rag.md",
+      "location": "lines 1-43",
+      "text": "# Phase 7：完全离线的本地文档问答\n\n状态：已完成第一版。\n\n## 流程\n\n1. 本地读取 Markdown、TXT 和带文字层的 PDF。\n2. 按文件行号或 PDF 页码切分内容。\n3. 使用无需额外模型的 BM25 检索相关段落。\n4. 只把选出的段落交给本地 Qwen3-14B。\n5. 要求回答使用 `[S1]` 等标记引用资料来源。\n\n整个过程没有联网，也没有下载 embedding 模型。\n\n## 端到端演示一：询问项目记录\n\n问题：为什么日常 16K 推荐 Q8_0？它比 F16 少用多少内存？\n\n回答：日常 16K 推荐 Q8_0 是因为其在质量测试中与 F16 表现相同，同时节省了约 1.17 GiB 的内存 `[S3]`。\n\n实际依据是 `results/phase-6b-analysis.md`。检索扫描了项目 README、实验文档和 Markdown 结果，Qwen 没有把其他候选片段强行写入答案。\n\n## 端到端演示二：询问 PDF\n\n问题：这份报告使用什么硬件？模型生成速度是多少？\n\n回答：报告使用 Mac Studio、Apple M2 Max 和 32 GB 统一内存；模型生成速度约为 30.82 tokens/s `[S1]`。\n\n实际依据是 `results/offline-pdf-demo.pdf` 第 1 页，说明 PDF 文字提取和页码来源均正常。\n\n## 产物\n\n- 通用入口：`scripts/ask_documents.sh`\n- 检索与 API 客户端：`scripts/local_rag.py`\n- 使用说明：`docs/05-local-rag.md`\n- 最近一次项目问答：`results/rag-last-answer.md`\n- 最近一次项目检索：`results/rag-last-retrieval.json`\n- PDF 演示答案：`results/rag-pdf-demo-answer.md`\n- PDF 演示检索：`results/rag-pdf-demo-retrieval.json`\n\n## 结论与边界\n\n本版本已经适合对少量个人笔记、实验记录和带文字层 PDF 做离线问答。明确的专有名词、数字和关键词检索效果很好。扫描版 PDF 仍需 OCR；同义词检索和大量文档的重复查询，后续可以用本地 embedding 模型及持久化索引增强。"
+    },
+    {
+      "id": "S2",
+      "score": 11.571664,
+      "path": "results/rag-pdf-demo-answer.md",
+      "location": "lines 1-9",
+      "text": "# 本地文档问答\n\n**问题：** 这份报告使用什么硬件？模型生成速度是多少？\n\n这份报告使用的是 Mac Studio，配备 Apple M2 Max 芯片和 32 GB 统一内存 [S1]。模型生成速度约为 30.82 tokens/s [S1]。\n\n## 检索来源\n\n- [S1] `results/offline-pdf-demo.pdf` (page 1)"
+    },
+    {
+      "id": "S3",
+      "score": 10.439172,
+      "path": "results/phase-6-analysis.md",
+      "location": "lines 1-35",
+      "text": "# Phase 6：KV cache 精度对比结论\n\n状态：性能与内存测试已完成；后续 Phase 6B 质量测试也已完成，三档均为 7/7。\n\n## 16K + 128-token 结果\n\n| KV cache | 综合速度 | 峰值内存 | 相对 F16 节省 |\n| --- | ---: | ---: | ---: |\n| F16 / F16 | 181.25 tokens/s | 11.06 GiB | - |\n| Q8_0 / Q8_0 | 183.08 tokens/s | 9.88 GiB | 1.17 GiB（约 10.6%） |\n| Q4_0 / Q4_0 | 182.38 tokens/s | 9.21 GiB | 1.85 GiB（约 16.8%） |\n\n三档速度差距约 1%，在单次扫描中可视为同一水平。KV cache 量化明显节省内存，没有观察到明显速度惩罚。\n\n## Swap\n\n- 测试前：6481.38 MiB used\n- Q4_0 后：6473.38 MiB used\n- Q8_0 后：6457.38 MiB used\n- F16 后：6186.06 MiB used\n- 三个 benchmark 进程都报告 0 swaps\n\n全局 swap 没有因本轮测试增加，反而由 macOS 在后台自然回收约 295 MiB。测试前已有较高 swap，主要是此前长 reasoning 等负载留下的历史状态，因此不能把存量 swap 归因于本轮 KV cache 测试。\n\n## 当前建议\n\n- 8K 或 16K 日常聊天：推荐 Q8_0。本次质量测试与 F16 相同，并能留出更多内存。\n- Q4_0：需要给更长上下文或其他应用腾出更多内存时使用；本次质量测试同样为 7/7。\n- F16：作为最高精度基准保留；本次没有观察到回答质量优势。\n\n## 边界\n\n`llama-bench` 使用合成 token，只测吞吐量与内存，不判断答案是否正确。后续质量 A/B 已记录在 `results/phase-6b-analysis.md`；这仍只是一份固定测试，不能代表所有任务都完全无损。\n\n自动生成的逐档记录见 `results/phase-6-kv-cache.md`，原始数据见 `results/kv-cache-benchmark.csv`。"
+    },
+    {
+      "id": "S4",
+      "score": 9.49447,
+      "path": "results/phase-6b-analysis.md",
+      "location": "lines 1-28",
+      "text": "# Phase 6B：KV cache 长上下文质量结论\n\n## 结果\n\n同一份 110 条虚构巡检记录、同一组问题、同一随机种子，在 16K 上下文下得到：\n\n| KV cache | 得分 | 峰值常驻内存 | 完整进程耗时 |\n| --- | ---: | ---: | ---: |\n| Q4_0 | 7 / 7 | 9.24 GiB | 36.40 s |\n| Q8_0 | 7 / 7 | 9.88 GiB | 36.14 s |\n| F16 | 7 / 7 | 11.05 GiB | 35.01 s |\n\n三档都正确找到了分散在文档不同位置的五个事实，正确完成跨段加法，也没有编造文档中未提及的屋顶颜色。\n\n## 怎么理解\n\n- 这次任务没有测出 Q4_0、Q8_0 与 F16 的回答质量差异。\n- 与 F16 相比，本次 Q8_0 少占约 1.17 GiB，Q4_0 少占约 1.80 GiB。\n- 三次完整耗时相差约 1.4 秒。单次运行会受模型缓存、系统调度和测试顺序影响，不能据此断言 F16 一定更快。\n- 这里量化的是聊天过程中不断增长的 KV cache，不是把 Qwen3-14B Q4_K_M 模型权重重新量化。\n\n## 建议\n\n日常 16K 聊天先用 **Q8_0**：本次质量与 F16 相同，同时保留约 1.17 GiB 内存余量。需要给更长上下文或其他应用腾出更多内存时，可切到 **Q4_0**；本次精确信息检索同样满分。\n\n本结论只覆盖一份固定、可复现的长文本测试。它说明“这道测试没有发现损失”，不代表 Q4_0 在所有写作、代码、复杂推理和更长上下文中都与 F16 完全等价。\n\n原始答案、日志和自动评分分别保存在 `results/kv-quality-*.json`、`results/kv-quality-*-latest.log` 和 `results/kv-quality-scores.csv`。"
+    },
+    {
+      "id": "S5",
+      "score": 9.251489,
+      "path": "results/offline-pdf-demo.md",
+      "location": "lines 1-30",
+      "text": "# 第一次在 Mac 上运行本地大模型\n\n在 Mac Studio 上运行本地大模型是一次令人印象深刻的体验。以下是对本次实验的简要总结。\n\n## 硬件配置\n\n- **设备**：Mac Studio，Apple M2 Max\n- **内存**：32 GB 统一内存\n- **运行框架**：llama.cpp，使用 Metal + Apple Accelerate\n\n## 模型信息\n\n- **模型名称**：Qwen3-14B Q4_K_M\n- **文件大小**：约 8.38 GiB（GGUF 格式）\n- **模型特性**：支持长上下文，适用于复杂任务\n\n## 运行性能\n\n- **基准生成速度**：约 30.82 tokens/s\n- **8K 长上下文**：峰值常驻内存约 9.81 GiB，未新增全局 swap\n- **16K 长上下文**：可运行，但引发约 494 MiB 新增全局 swap\n\n## 8K 上下文结论\n\n在日常使用中，推荐使用 8K 上下文长度。它在性能和资源消耗之间取得了良好的平衡，适合大多数应用场景。\n\n## 个人感受\n\n首次在 Mac Studio 上运行本地大模型，体验非常流畅。硬件性能强大，软件框架优化良好，模型运行稳定，响应速度快。对于本地 AI 应用的探索，这是一次非常值得尝试的体验。"
+    }
+  ]
+}

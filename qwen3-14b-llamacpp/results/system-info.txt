@@ -1,0 +1,73 @@
+Phase 0 System Information
+==========================
+
+Captured: 2026-08-30 16:59:44 JST
+
+Host
+----
+OS: macOS 26.6.2 (Build 25G83)
+Model: Mac Studio (Mac14,13)
+Chip: Apple M2 Max
+CPU cores: 12 (8 Performance, 4 Efficiency)
+Unified memory: 32 GB
+Architecture: arm64
+
+Disk (/System/Volumes/Data)
+---------------------------
+Total: 460 GiB
+Used: 384 GiB
+Available after build: 55 GiB
+Capacity used: 88%
+
+Toolchain
+---------
+AppleClang: 21.0.0 (clang-2100.1.1.101)
+Compiler target: arm64-apple-darwin25.6.0
+CMake: 4.4.2
+
+llama.cpp
+---------
+Existing repository: ~/dev/opensource/llama.cpp
+Existing repository branch: master
+Existing repository HEAD: eb25b7263e1604b4382295563f5a924002d6f87c
+Existing repository status: clean; master is 82 commits behind refreshed origin/master
+
+Experiment worktree (project-relative): worktrees/llama.cpp
+Worktree mode: detached HEAD
+Build commit: bebc9350ecc42a31ad119da1513998386671cf5b
+Build commit subject: common: rename --tensor-read-lazy to --lazy-mode, add -lzm shorthand (#27969)
+
+Build
+-----
+Configuration: Release
+Build directory (project-relative): worktrees/llama.cpp/build-release-metal
+Build directory size: 210 MiB
+GGML_METAL: ON
+GGML_METAL_EMBED_LIBRARY: ON
+Metal configuration result: Metal framework found; METAL backend included
+Metal runtime verification: MTL0: Apple M2 Max (25559 MiB, 25558 MiB free at verification time)
+BLAS backend: Apple Accelerate
+
+Built executables:
+- worktrees/llama.cpp/build-release-metal/bin/llama-cli
+- worktrees/llama.cpp/build-release-metal/bin/llama-server
+- worktrees/llama.cpp/build-release-metal/bin/llama-bench
+
+llama-cli version: 0.3.0-dev (build 10700, commit bebc9350e)
+llama-server version: 0.3.0-dev (build 10700, commit bebc9350e)
+llama-bench verification: executable built; device enumeration succeeded without running a benchmark
+
+Phase 0 boundaries
+------------------
+No Qwen3-14B Q4_K_M weights or other inference-model weights were downloaded.
+The llama.cpp checkout includes its own small, repository-tracked tokenizer/vocabulary GGUF fixtures.
+The llama-server build fetched its version-matched web UI asset archive; this was not a model download.
+No slow tests or model benchmarks were run.
+No existing contribution branch was modified.
+No Git commit or push was performed.
+
+Later phase note
+----------------
+The statements above describe the end of Phase 0. Phase 1 later downloaded and verified
+Qwen3-14B Q4_K_M. Current model and inference results are in:
+results/phase-1-smoke-test.txt

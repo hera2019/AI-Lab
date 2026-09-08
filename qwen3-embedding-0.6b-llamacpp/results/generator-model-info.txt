@@ -1,0 +1,31 @@
+Recorded: 2026-09-06 (Asia/Tokyo)
+Purpose: Phase 3 local RAG answer generation
+
+Original model: Qwen/Qwen3-4B-Instruct-2507
+GGUF repository: ggml-org/Qwen3-4B-Instruct-2507-Q8_0-GGUF
+Repository revision: e6f794d44f9395d0184a966c27b5ae99ea356fcb
+File: qwen3-4b-instruct-2507-q8_0.gguf
+Quantization: Q8_0
+Bytes: 4280403520
+SHA-256: ae916ede1c010a26955ee8ae2e908bf8815a3f135ec860439ab924701c69d5f1
+License: Apache-2.0
+
+llama.cpp commit: 6a1a922d269908a29cbd4b49c27e6a8e7fd10fae
+llama.cpp build: b10819-6a1a922d2
+Build: Release
+Backends: Metal, Accelerate, CPU
+
+Smoke test answer: 本地问答模型已就绪。
+Smoke test prompt processing: 450.8 tokens/second
+Smoke test generation: 67.8 tokens/second
+Smoke test wall time: 1.14 seconds
+Smoke test maximum resident set size: 5627592704 bytes (about 5.24 GiB)
+Smoke test swaps: 0
+
+Final Phase 3 maximum resident set size: 5599461376 bytes (about 5.22 GiB)
+Final Phase 3 swaps: 0
+Disk available after Phase 3: 128 GiB
+
+Model source: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+GGUF source: https://huggingface.co/ggml-org/Qwen3-4B-Instruct-2507-Q8_0-GGUF
+llama.cpp guide: https://github.com/QwenLM/Qwen3/blob/main/docs/source/run_locally/llama.cpp.md

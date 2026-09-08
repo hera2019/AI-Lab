@@ -1,0 +1,9 @@
+{"id":"Q01","language":"zh","query":"如果运行时内存装不下，系统会把暂时不用的数据挪到哪里？","expected":"memory-swap"}
+{"id":"Q02","language":"ja","query":"Apple の GPU を使ってローカル AI の計算を速くする仕組みは何ですか。","expected":"apple-metal"}
+{"id":"Q03","language":"en","query":"How did we reduce a seven-minute video preview to roughly one minute?","expected":"fastwan"}
+{"id":"Q04","language":"zh","query":"为什么反复调整视频动作时，不应该每一次都用画质最好的完整解码器？","expected":"vae-tae"}
+{"id":"Q05","language":"ja","query":"一枚の画像を基準にして短い動画を作る方式は何と呼ばれますか。","expected":"i2v"}
+{"id":"Q06","language":"en","query":"Where should large downloaded weights live so deleting them does not erase experiment notes?","expected":"model-storage"}
+{"id":"Q07","language":"zh","query":"怎样降低收据数字识别错误进入财务账目的风险？","expected":"ocr-hybrid"}
+{"id":"Q08","language":"zh","query":"没有人说话时，怎样避免语音模型凭空显示字幕？","expected":"vad"}
+{"id":"Q09","language":"ja","query":"検索した根拠を会話モデルに渡して回答させる仕組みは何ですか。","expected":"rag"}

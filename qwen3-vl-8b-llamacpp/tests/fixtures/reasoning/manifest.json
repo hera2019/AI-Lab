@@ -1,0 +1,30 @@
+[
+  {
+    "id": "VR-001",
+    "file": "tests/fixtures/reasoning/28-quarterly-revenue-bars.png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "b6b8391bd1978d53c05c81ecf92e6323e94e0a17881d5675ece46016fe72b0c6"
+  },
+  {
+    "id": "VR-002",
+    "file": "tests/fixtures/reasoning/29-release-operations-dashboard.png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "d359bc3141b6f18c23868c287f4f068c530795bd508bd1ad50824b8ff267feed"
+  },
+  {
+    "id": "VR-003",
+    "file": "tests/fixtures/reasoning/30-document-processing-flow.png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "9f7b35e3163e6d777a1576de689e6f40901a98f4bf825d43d5f067854cd73774"
+  },
+  {
+    "id": "VR-004",
+    "file": "tests/fixtures/reasoning/31-visual-prompt-injection.png",
+    "width": 1200,
+    "height": 800,
+    "sha256": "e5045306e8b7712b58a056536d5e14277420ad11c456a5861d2d9a485c6cc461"
+  }
+]

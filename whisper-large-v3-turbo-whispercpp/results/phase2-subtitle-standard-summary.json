@@ -1,0 +1,140 @@
+{
+  "mode": "standard",
+  "extra_arguments": [],
+  "audio": {
+    "id": "SUB-EN-001",
+    "purpose": "timestamp and SRT/VTT validation with known pauses",
+    "generator": "macOS say + FFmpeg",
+    "voice": "Samantha",
+    "file": "tests/fixtures/audio/phase2-subtitles/subtitle-en-001.wav",
+    "audio_format": "16000 Hz mono PCM s16le WAV",
+    "duration_seconds": 12.036875,
+    "sha256": "f4ba62d526f165f48f50625c00d4f44f224a9f78f265e45647fed4c9f60db02b",
+    "leading_silence_seconds": 1.0,
+    "between_silence_seconds": 2.0,
+    "trailing_silence_seconds": 1.0,
+    "timeline": [
+      {
+        "index": 1,
+        "text": "Welcome to the weekly project update.",
+        "expected_start_seconds": 1.0,
+        "expected_end_seconds": 3.099563,
+        "speech_duration_seconds": 2.099563
+      },
+      {
+        "index": 2,
+        "text": "The design review begins at ten thirty.",
+        "expected_start_seconds": 5.099563,
+        "expected_end_seconds": 7.147188,
+        "speech_duration_seconds": 2.047625
+      },
+      {
+        "index": 3,
+        "text": "Please send your comments by Friday.",
+        "expected_start_seconds": 9.147188,
+        "expected_end_seconds": 11.036876,
+        "speech_duration_seconds": 1.889688
+      }
+    ]
+  },
+  "exit_code": 0,
+  "wall_seconds": 1.177250208973419,
+  "wall_realtime_factor": 0.09780364164065997,
+  "whisper_total_ms": 1070.78,
+  "whisper_realtime_factor": 0.08895830520795472,
+  "max_rss_bytes": 853540864,
+  "metal_log_detected": true,
+  "files_present": {
+    "txt": true,
+    "json": true,
+    "srt": true,
+    "vtt": true
+  },
+  "txt": "Welcome to the weekly project update.\nThe design review begins at 10:30.\nPlease send your comments by Friday.",
+  "srt_cues": [
+    {
+      "index": 1,
+      "start_seconds": 1.0,
+      "end_seconds": 5.12,
+      "text": "Welcome to the weekly project update."
+    },
+    {
+      "index": 2,
+      "start_seconds": 5.12,
+      "end_seconds": 9.16,
+      "text": "The design review begins at 10:30."
+    },
+    {
+      "index": 3,
+      "start_seconds": 9.16,
+      "end_seconds": 11.04,
+      "text": "Please send your comments by Friday."
+    }
+  ],
+  "vtt_cues": [
+    {
+      "start_seconds": 1.0,
+      "end_seconds": 5.12,
+      "text": "Welcome to the weekly project update."
+    },
+    {
+      "start_seconds": 5.12,
+      "end_seconds": 9.16,
+      "text": "The design review begins at 10:30."
+    },
+    {
+      "start_seconds": 9.16,
+      "end_seconds": 11.04,
+      "text": "Please send your comments by Friday."
+    }
+  ],
+  "json_segment_count": 3,
+  "timestamp_alignment": [
+    {
+      "index": 1,
+      "matched": true,
+      "expected_start_seconds": 1.0,
+      "actual_start_seconds": 1.0,
+      "start_error_seconds": 0.0,
+      "expected_end_seconds": 3.099563,
+      "actual_end_seconds": 5.12,
+      "end_error_seconds": 2.0204370000000003,
+      "within_one_second": false
+    },
+    {
+      "index": 2,
+      "matched": true,
+      "expected_start_seconds": 5.099563,
+      "actual_start_seconds": 5.12,
+      "start_error_seconds": 0.02043700000000026,
+      "expected_end_seconds": 7.147188,
+      "actual_end_seconds": 9.16,
+      "end_error_seconds": 2.0128120000000003,
+      "within_one_second": false
+    },
+    {
+      "index": 3,
+      "matched": true,
+      "expected_start_seconds": 9.147188,
+      "actual_start_seconds": 9.16,
+      "start_error_seconds": 0.012812000000000268,
+      "expected_end_seconds": 11.036876,
+      "actual_end_seconds": 11.04,
+      "end_error_seconds": 0.0031239999999996826,
+      "within_one_second": true
+    }
+  ],
+  "checks": {
+    "command_exit_zero": true,
+    "all_four_files_present": true,
+    "txt_contains_all_sentences": true,
+    "srt_has_valid_monotonic_timeline": true,
+    "vtt_has_valid_monotonic_timeline": true,
+    "srt_contains_all_sentences": true,
+    "vtt_contains_all_sentences": true,
+    "json_has_timestamped_segments": true,
+    "all_expected_segments_within_one_second": false
+  },
+  "all_checks_passed": false,
+  "pipeline_ok": true
+}

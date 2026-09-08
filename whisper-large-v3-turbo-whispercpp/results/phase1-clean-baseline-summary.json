@@ -1,0 +1,115 @@
+{
+  "model": "~/Documents/AI-Models/whispercpp/ggml-large-v3-turbo-q5_0.bin",
+  "model_size_bytes": 574041195,
+  "cases": [
+    {
+      "id": "ASR-ZH-001",
+      "language_argument": "zh",
+      "audio_file": "asr-zh-001.wav",
+      "audio_duration_seconds": 8.608,
+      "exit_code": 0,
+      "expected": "今天是二零二六年九月二日。会议将在下午三点十五分开始。订单编号是A七三一。",
+      "actual": "今天是2026年9月2日,会议将在下午3点15分开始,订单编号是A731。",
+      "score": {
+        "metric": "CER",
+        "edit_distance": 12,
+        "reference_units": 34,
+        "error_rate": 0.35294117647058826,
+        "normalized_exact": false
+      },
+      "wall_seconds": 18.445603624975774,
+      "wall_realtime_factor": 2.142844287288078,
+      "whisper_total_ms": 1499.8,
+      "whisper_realtime_factor": 0.17423327137546468,
+      "max_rss_bytes": 868335616,
+      "metal_log_detected": true,
+      "critical_values": [
+        "2026-09-02",
+        "15:15",
+        "A731"
+      ]
+    },
+    {
+      "id": "ASR-JA-001",
+      "language_argument": "ja",
+      "audio_file": "asr-ja-001.wav",
+      "audio_duration_seconds": 10.153,
+      "exit_code": 0,
+      "expected": "今日は二千二十六年九月二日です。会議は午後三時十五分に始まります。注文番号はエー七三一です。",
+      "actual": "今日は2026年9月2日です。会議は午後3時15分に始まります。注文番号はA731です。",
+      "score": {
+        "metric": "CER",
+        "edit_distance": 15,
+        "reference_units": 43,
+        "error_rate": 0.3488372093023256,
+        "normalized_exact": false
+      },
+      "wall_seconds": 0.986959540983662,
+      "wall_realtime_factor": 0.09720866157624958,
+      "whisper_total_ms": 879.44,
+      "whisper_realtime_factor": 0.08661873337929675,
+      "max_rss_bytes": 865222656,
+      "metal_log_detected": true,
+      "critical_values": [
+        "2026-09-02",
+        "15:15",
+        "A731"
+      ]
+    },
+    {
+      "id": "ASR-EN-001",
+      "language_argument": "en",
+      "audio_file": "asr-en-001.wav",
+      "audio_duration_seconds": 7.291,
+      "exit_code": 0,
+      "expected": "Today is September second, twenty twenty-six. The meeting starts at three fifteen P.M. The order number is A seven three one.",
+      "actual": "Today is September 2, 2026. The meeting starts at 3.15pm. The order number is A731.",
+      "score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "wall_seconds": 0.8936929580522701,
+      "wall_realtime_factor": 0.12257481251574133,
+      "whisper_total_ms": 794.29,
+      "whisper_realtime_factor": 0.10894116033465916,
+      "max_rss_bytes": 865222656,
+      "metal_log_detected": true,
+      "critical_values": [
+        "2026-09-02",
+        "15:15",
+        "A731"
+      ]
+    },
+    {
+      "id": "ASR-MIX-001",
+      "language_argument": "auto",
+      "audio_file": "asr-mix-001.wav",
+      "audio_duration_seconds": 8.425,
+      "exit_code": 0,
+      "expected": "项目代号是海风七号。 次の会議は東京で開きます。 Please upload the final report by Friday.",
+      "actual": "次の会議は東京で開きます。",
+      "score": {
+        "metric": "CER",
+        "edit_distance": 43,
+        "reference_units": 55,
+        "error_rate": 0.7818181818181819,
+        "normalized_exact": false
+      },
+      "wall_seconds": 1.3443022500141524,
+      "wall_realtime_factor": 0.15956109792452847,
+      "whisper_total_ms": 1240.68,
+      "whisper_realtime_factor": 0.14726172106824925,
+      "max_rss_bytes": 863895552,
+      "metal_log_detected": true,
+      "critical_values": [
+        "海风七号",
+        "東京",
+        "Friday"
+      ]
+    }
+  ],
+  "all_commands_ok": true
+}

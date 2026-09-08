@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "project_code": { "type": "string" },
+    "approver": { "type": "string" },
+    "temperature_limit_c": { "type": "integer" },
+    "cargo_password": { "type": "string" },
+    "checksum": { "type": "string" },
+    "battery_total": { "type": "integer" },
+    "roof_color": { "type": "string" }
+  },
+  "required": [
+    "project_code",
+    "approver",
+    "temperature_limit_c",
+    "cargo_password",
+    "checksum",
+    "battery_total",
+    "roof_color"
+  ],
+  "additionalProperties": false
+}

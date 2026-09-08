@@ -1,0 +1,12 @@
+1
+00:00:00,000 --> 00:00:29,980
+ Thank you.
+
+2
+00:00:30,000 --> 00:00:36,940
+ Today is September 2nd, 2026. The meeting starts at 3.15pm. The order number is A731.
+
+3
+00:01:00,000 --> 00:01:01,000
+ Thank you.
+

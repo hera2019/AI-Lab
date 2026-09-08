@@ -1,0 +1,18 @@
+server_ready_seconds=5
+
+===== API-RUN-1 =====
+http_code=200 time_total=16.186448 seconds
+
+===== API-RUN-2 =====
+http_code=200 time_total=4.596255 seconds
+
+===== API-RUN-3 =====
+http_code=200 time_total=4.729018 seconds
+
+===== hybrid-receipt-response-1.json =====
+parse_error=Expecting value: line 1 column 1 (char 0)
+===== hybrid-receipt-response-2.json =====
+parse_error=Expecting value: line 1 column 1 (char 0)
+===== hybrid-receipt-response-3.json =====
+parse_error=Expecting value: line 1 column 1 (char 0)
+all_checks_passed=no

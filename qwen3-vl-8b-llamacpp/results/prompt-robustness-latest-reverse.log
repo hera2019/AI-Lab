@@ -1,0 +1,53 @@
+server_ready_seconds=2.035
+
+===== PR-ACTION-ZH-EVIDENCE =====
+style=zh_evidence_first
+{"foreground_action": "clapping", "people_count": 2, "pointing_direction": "image_right"}
+elapsed_seconds=4.379825
+result=FAIL
+
+===== PR-ACTION-EN-PLAIN =====
+style=en_plain
+{"foreground_action": "pointing", "people_count": 2, "pointing_direction": "image_right"}
+elapsed_seconds=1.261287
+result=PASS
+
+===== PR-ACTION-ZH-DEFINED =====
+style=zh_defined
+{"foreground_action": "pointing", "people_count": 2, "pointing_direction": "image_right"}
+elapsed_seconds=0.926866
+result=PASS
+
+===== PR-ACTION-ZH-CONCISE =====
+style=zh_concise
+{"foreground_action": "pointing", "people_count": 2, "pointing_direction": "image_right"}
+elapsed_seconds=0.887390
+result=PASS
+
+===== PR-CHART-ZH-EVIDENCE =====
+style=zh_evidence_first
+{"q1": 12, "q2": 18, "q2_to_q3_decreased": true, "q3": 15, "q4": 27}
+elapsed_seconds=4.851301
+result=PASS
+
+===== PR-CHART-EN-DEFINED =====
+style=en_defined
+{"q1": 12, "q2": 18, "q2_to_q3_decreased": true, "q3": 15, "q4": 27}
+elapsed_seconds=1.306173
+result=PASS
+
+===== PR-CHART-ZH-DEFINED =====
+style=zh_defined
+{"q1": 12, "q2": 18, "q2_to_q3_decreased": true, "q3": 15, "q4": 27}
+elapsed_seconds=1.300987
+result=PASS
+
+===== PR-CHART-ZH-CONCISE =====
+style=zh_concise
+{"q1": 12, "q2": 18, "q2_to_q3_decreased": true, "q3": 15, "q4": 27}
+elapsed_seconds=1.323481
+result=PASS
+
+task=action passed=3/4 unique_answers=2
+task=chart passed=4/4 unique_answers=1
+all_cases_passed=no

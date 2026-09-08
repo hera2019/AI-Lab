@@ -1,0 +1,108 @@
+{
+  "source": "tests/fixtures/audio/asr-en-001.wav",
+  "expected_text": "Today is September second, twenty twenty-six. The meeting starts at three fifteen P.M. The order number is A seven three one.",
+  "critical_values": [
+    "2026-09-02",
+    "15:15",
+    "A731"
+  ],
+  "files": [
+    {
+      "file": "tests/fixtures/audio/phase2-formats/english-reference.wav",
+      "purpose": "uncompressed reference",
+      "size_bytes": 233390,
+      "sha256": "e22083b18611bcaa34361b3c5860cba04c37b75ff859e96dc4b088a59dfdd4be",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "pcm_s16le",
+            "codec_type": "audio",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "format_name": "wav",
+          "duration": "7.291000"
+        }
+      }
+    },
+    {
+      "file": "tests/fixtures/audio/phase2-formats/english-voice-memo.m4a",
+      "purpose": "iPhone Voice Memos-like AAC audio container",
+      "size_bytes": 67319,
+      "sha256": "232de3e91344105928d1045fdf493222764fd924e10148347f018985e90b72ec",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "duration": "7.291000"
+        }
+      }
+    },
+    {
+      "file": "tests/fixtures/audio/phase2-formats/english-shared-audio.mp3",
+      "purpose": "common shared/downloaded audio",
+      "size_bytes": 89036,
+      "sha256": "6b9468b97b838fb255d86af336ca2f32167ce6d633b539fb453c7c6c1797775c",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "mp3",
+            "codec_type": "audio",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "format_name": "mp3",
+          "duration": "7.291000"
+        }
+      }
+    },
+    {
+      "file": "tests/fixtures/audio/phase2-formats/english-camera-video.mov",
+      "purpose": "camera-like MOV with H.264 video and AAC audio",
+      "size_bytes": 69504,
+      "sha256": "867fa7ea34848f39fd5569bcc118390f1bb1ac8ae3d10c0935e58d19cb220474",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "index": 0,
+            "codec_name": "h264",
+            "codec_type": "video"
+          },
+          {
+            "index": 1,
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "sample_rate": "16000",
+            "channels": 1
+          }
+        ],
+        "format": {
+          "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+          "duration": "7.291000"
+        }
+      }
+    }
+  ]
+}

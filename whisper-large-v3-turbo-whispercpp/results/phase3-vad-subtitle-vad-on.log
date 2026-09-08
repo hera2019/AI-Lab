@@ -1,0 +1,168 @@
+
+[00:00:00.960 --> 00:00:03.000]   Welcome to the weekly project update.
+[00:00:05.090 --> 00:00:06.990]   The design review begins at 10.30.
+[00:00:08.160 --> 00:00:10.830]   Please send your comments by Friday.
+whisper_init_from_file_with_params_no_state: loading model from '~/Documents/AI-Models/whispercpp/ggml-large-v3-turbo-q5_0.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_compile_all: compiled 'fa' library in 0.011 sec
+ggml_metal_library_compile_all: compiled 'mul_mv' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'mul_mm' library in 0.003 sec
+ggml_metal_library_compile_all: compiled 'quantize' library in 0.012 sec
+ggml_metal_library_compile_all: compiled 'softmax' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'norm' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'unary' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'binbcast' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'reduce' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'tri' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'ssm' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'wkv' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'gated_delta_net' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'solve_tri' library in 0.011 sec
+ggml_metal_library_compile_all: compiled 'rope' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'conv' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'upscale' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'argsort' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'pool' library in 0.001 sec
+ggml_metal_library_compile_all: compiled 'misc' library in 0.001 sec
+ggml_metal_library_compile_all: loaded 20 libraries from embedded data in 0.012 sec (max single = 0.012 sec)
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple M2 Max)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple8  (1008)
+ggml_metal_device_init: GPU family: MTLGPUFamilyCommon3 (3003)
+ggml_metal_device_init: GPU family: MTLGPUFamilyMetal4  (5002)
+ggml_metal_device_init: simdgroup reduction   = true
+ggml_metal_device_init: simdgroup matrix mul. = true
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = true
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 26800.60 MB
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 8
+whisper_model_load: qntvr         = 2
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:         MTL0 total size =   573.40 MB
+whisper_model_load: model size    =  573.40 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple M2 Max
+ggml_metal_init: picking default device: Apple M2 Max
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: compute buffer (conv)   =   37.69 MB
+whisper_init_state: compute buffer (encode) =   67.49 MB
+whisper_init_state: compute buffer (cross)  =   63.03 MB
+whisper_init_state: compute buffer (decode) =  100.04 MB
+read_audio_data: reading audio data from '~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/tests/fixtures/audio/phase2-subtitles/subtitle-en-001.wav' ...
+read_audio_data: trying to decode with miniaudio
+
+system_info: n_threads = 8 / 12 | WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | ACCELERATE = 1 | REPACK = 1 | 
+
+main: processing '~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/tests/fixtures/audio/phase2-subtitles/subtitle-en-001.wav' (192590 samples, 12.0 sec), 8 threads, 1 processors, 5 beams + best of 5, lang = en, task = transcribe, timestamps = 1 ...
+
+whisper_full: VAD is enabled, processing speech segments only
+whisper_vad: VAD is enabled, processing speech segments only
+whisper_vad_init_from_file_with_params: loading VAD model from '~/Documents/AI-Models/whispercpp/ggml-silero-v6.2.0.bin'
+whisper_vad_init_with_params: model type: silero-16k
+whisper_vad_init_with_params: model version: 6.2.0
+whisper_vad_init_with_params: n_encoder_layers = 4
+whisper_vad_init_with_params: encoder_in_channels[0] = 129
+whisper_vad_init_with_params: encoder_in_channels[1] = 128
+whisper_vad_init_with_params: encoder_in_channels[2] = 64
+whisper_vad_init_with_params: encoder_in_channels[3] = 64
+whisper_vad_init_with_params: encoder_out_channels[0] = 128
+whisper_vad_init_with_params: encoder_out_channels[1] = 64
+whisper_vad_init_with_params: encoder_out_channels[2] = 64
+whisper_vad_init_with_params: encoder_out_channels[3] = 128
+whisper_vad_init_with_params: lstm_input_size = 128
+whisper_vad_init_with_params: lstm_hidden_size = 128
+whisper_vad_init_with_params: final_conv_in = 128
+whisper_vad_init_with_params: final_conv_out = 1
+whisper_vad_init_with_params:          CPU total size =     0.88 MB
+whisper_vad_init_with_params: model size    =    0.88 MB
+whisper_backend_init_gpu: no GPU found
+whisper_backend_init: using BLAS backend
+whisper_vad_init_context: compute buffer (VAD)   =    1.60 MB
+whisper_vad_segments_from_samples: detecting speech timestamps in 192590 samples
+whisper_vad_detect_speech_no_reset: detecting speech in 192590 samples
+whisper_vad_detect_speech_no_reset: n_chunks: 377
+whisper_vad_detect_speech_no_reset: props size: 377
+whisper_vad_detect_speech_no_reset: chunk_len: 78 < n_window: 512
+whisper_vad_detect_speech_no_reset: vad time = 34.12 ms processing 192590 samples
+whisper_vad_segments_from_probs: detecting speech timestamps using 377 probabilities
+whisper_vad_segments_from_probs: Merged 0 adjacent segments, now have 3 segments
+whisper_vad_segments_from_probs: Final speech segments after filtering: 3
+whisper_vad_segments_from_probs: VAD segment 0: start = 0.96, end = 3.13 (duration: 2.17)
+whisper_vad_segments_from_probs: VAD segment 1: start = 5.06, end = 7.20 (duration: 2.14)
+whisper_vad_segments_from_probs: VAD segment 2: start = 9.12, end = 11.10 (duration: 1.98)
+whisper_vad: detected 3 speech segments
+whisper_vad: Including segment 0: 0.96 - 3.23 (duration: 2.27)
+whisper_vad: Including segment 1: 5.06 - 7.30 (duration: 2.24)
+whisper_vad: Including segment 2: 9.12 - 11.10 (duration: 1.98)
+whisper_vad: total duration of speech segments: 6.49 seconds
+whisper_vad: vad_segment_info: orig_start: 0.96, orig_end: 3.13, vad_start: 0.00, vad_end: 2.17
+whisper_vad: vad_segment_info: orig_start: 5.06, orig_end: 7.20, vad_start: 2.37, vad_end: 4.51
+whisper_vad: vad_segment_info: orig_start: 9.12, orig_end: 11.10, vad_start: 4.71, vad_end: 6.69
+whisper_vad: Created time mapping table with 8 points
+whisper_vad: Reduced audio from 192590 to 107040 samples (44.4% reduction)
+output_txt: saving output to '~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/phase3-vad-subtitle-vad-on.txt'
+output_srt: saving output to '~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/phase3-vad-subtitle-vad-on.srt'
+output_json: saving output to '~/Documents/AI-Lab/whisper-large-v3-turbo-whispercpp/results/phase3-vad-subtitle-vad-on.json'
+
+whisper_print_timings:     load time =   195.51 ms
+whisper_print_timings:     fallbacks =   0 p /   0 h
+whisper_print_timings:      mel time =     3.36 ms
+whisper_print_timings:   sample time =    35.98 ms /   150 runs (     0.24 ms per run)
+whisper_print_timings:   encode time =   452.77 ms /     1 runs (   452.77 ms per run)
+whisper_print_timings:   decode time =     0.00 ms /     1 runs (     0.00 ms per run)
+whisper_print_timings:   batchd time =    86.50 ms /   148 runs (     0.58 ms per run)
+whisper_print_timings:   prompt time =     0.00 ms /     1 runs (     0.00 ms per run)
+whisper_print_timings:    total time =   830.87 ms
+ggml_metal_free: deallocating
+real 0.92
+user 0.28
+sys 0.21
+           869908480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               57962  page reclaims
+                  10  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                2727  involuntary context switches
+          4514484992  instructions retired
+          1642175165  cycles elapsed
+           833881480  peak memory footprint

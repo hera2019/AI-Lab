@@ -1,0 +1,176 @@
+{
+  "method": "same fixed speech transcoded into common containers",
+  "expected": "Today is September second, twenty twenty-six. The meeting starts at three fifteen P.M. The order number is A seven three one.",
+  "direct_cases": [
+    {
+      "id": "FORMAT-DIRECT-WAV",
+      "input": "tests/fixtures/audio/phase2-formats/english-reference.wav",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2, 2026. The meeting starts at 3.15pm. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_pass": true,
+      "wall_seconds": 1.3690415840246715,
+      "wall_realtime_factor": 0.18777144205522855,
+      "whisper_total_ms": 1202.76,
+      "whisper_realtime_factor": 0.16496502537374846,
+      "max_rss_bytes": 852443136,
+      "metal_log_detected": true
+    },
+    {
+      "id": "FORMAT-DIRECT-M4A",
+      "input": "tests/fixtures/audio/phase2-formats/english-voice-memo.m4a",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2, 2026. The meeting starts at 3.15pm. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_pass": true,
+      "wall_seconds": 0.8646872920216992,
+      "wall_realtime_factor": 0.11859652887418724,
+      "whisper_total_ms": 765.56,
+      "whisper_realtime_factor": 0.1050006857769853,
+      "max_rss_bytes": 870318080,
+      "metal_log_detected": true
+    },
+    {
+      "id": "FORMAT-DIRECT-MP3",
+      "input": "tests/fixtures/audio/phase2-formats/english-shared-audio.mp3",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2, 2026. The meeting starts at 3.15 p.m. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 10,
+        "reference_units": 23,
+        "error_rate": 0.43478260869565216,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_pass": true,
+      "wall_seconds": 0.8880672919913195,
+      "wall_realtime_factor": 0.12180322205339726,
+      "whisper_total_ms": 790.24,
+      "whisper_realtime_factor": 0.10838568097654643,
+      "max_rss_bytes": 866156544,
+      "metal_log_detected": true
+    },
+    {
+      "id": "FORMAT-DIRECT-MOV",
+      "input": "tests/fixtures/audio/phase2-formats/english-camera-video.mov",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2, 2026. The meeting starts at 3.15pm. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_pass": true,
+      "wall_seconds": 0.889258333016187,
+      "wall_realtime_factor": 0.12196657975808352,
+      "whisper_total_ms": 795.31,
+      "whisper_realtime_factor": 0.10908105883966533,
+      "max_rss_bytes": 870055936,
+      "metal_log_detected": true
+    }
+  ],
+  "ffmpeg_fallback_cases": [
+    {
+      "id": "FORMAT-FALLBACK-M4A-TO-WAV",
+      "input": "results/phase2-normalized-from-m4a.wav",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2, 2026. The meeting starts at 3.15pm. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_pass": true,
+      "wall_seconds": 0.8633416669908911,
+      "wall_realtime_factor": 0.11841196913878632,
+      "whisper_total_ms": 763.43,
+      "whisper_realtime_factor": 0.10470854478123713,
+      "max_rss_bytes": 866140160,
+      "metal_log_detected": true,
+      "conversion_seconds": 0.03568083397112787,
+      "pipeline_wall_seconds": 0.899022500962019
+    },
+    {
+      "id": "FORMAT-FALLBACK-MOV-TO-WAV",
+      "input": "results/phase2-normalized-from-mov.wav",
+      "duration_seconds": 7.291,
+      "exit_code": 0,
+      "actual": "Today is September 2, 2026. The meeting starts at 3.15pm. The order number is A731.",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": {
+        "date_2026_09_02": true,
+        "time_15_15": true,
+        "order_A731": true,
+        "sentence_content": true
+      },
+      "semantic_pass": true,
+      "wall_seconds": 0.8596647499944083,
+      "wall_realtime_factor": 0.11790766012815915,
+      "whisper_total_ms": 766.91,
+      "whisper_realtime_factor": 0.10518584556302289,
+      "max_rss_bytes": 863846400,
+      "metal_log_detected": true,
+      "conversion_seconds": 0.030862041050568223,
+      "pipeline_wall_seconds": 0.8905267910449766
+    }
+  ],
+  "all_direct_inputs_supported": true,
+  "all_fallbacks_passed": true
+}

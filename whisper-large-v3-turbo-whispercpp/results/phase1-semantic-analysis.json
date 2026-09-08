@@ -1,0 +1,176 @@
+{
+  "method": "deterministic case-specific checks; strict CER/WER remains unchanged",
+  "cases": [
+    {
+      "id": "ASR-ZH-001",
+      "strict_score": {
+        "metric": "CER",
+        "edit_distance": 12,
+        "reference_units": 34,
+        "error_rate": 0.35294117647058826,
+        "normalized_exact": false
+      },
+      "semantic_checks": [
+        {
+          "name": "date",
+          "expected_meaning": "2026-09-02",
+          "passed": true
+        },
+        {
+          "name": "time",
+          "expected_meaning": "15:15",
+          "passed": true
+        },
+        {
+          "name": "order_id",
+          "expected_meaning": "A731",
+          "passed": true
+        },
+        {
+          "name": "sentence_content",
+          "expected_meaning": "three intended statements",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 4,
+      "semantic_total": 4,
+      "semantic_content_pass": true
+    },
+    {
+      "id": "ASR-JA-001",
+      "strict_score": {
+        "metric": "CER",
+        "edit_distance": 15,
+        "reference_units": 43,
+        "error_rate": 0.3488372093023256,
+        "normalized_exact": false
+      },
+      "semantic_checks": [
+        {
+          "name": "date",
+          "expected_meaning": "2026-09-02",
+          "passed": true
+        },
+        {
+          "name": "time",
+          "expected_meaning": "15:15",
+          "passed": true
+        },
+        {
+          "name": "order_id",
+          "expected_meaning": "A731",
+          "passed": true
+        },
+        {
+          "name": "sentence_content",
+          "expected_meaning": "three intended statements",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 4,
+      "semantic_total": 4,
+      "semantic_content_pass": true
+    },
+    {
+      "id": "ASR-EN-001",
+      "strict_score": {
+        "metric": "WER",
+        "edit_distance": 12,
+        "reference_units": 23,
+        "error_rate": 0.5217391304347826,
+        "normalized_exact": false
+      },
+      "semantic_checks": [
+        {
+          "name": "date",
+          "expected_meaning": "2026-09-02",
+          "passed": true
+        },
+        {
+          "name": "time",
+          "expected_meaning": "15:15",
+          "passed": true
+        },
+        {
+          "name": "order_id",
+          "expected_meaning": "A731",
+          "passed": true
+        },
+        {
+          "name": "sentence_content",
+          "expected_meaning": "three intended statements",
+          "passed": true
+        }
+      ],
+      "semantic_passed": 4,
+      "semantic_total": 4,
+      "semantic_content_pass": true
+    },
+    {
+      "id": "ASR-MIX-001",
+      "strict_score": {
+        "metric": "CER",
+        "edit_distance": 43,
+        "reference_units": 55,
+        "error_rate": 0.7818181818181819,
+        "normalized_exact": false
+      },
+      "semantic_checks": [
+        {
+          "name": "zh_segment",
+          "expected_meaning": "项目代号是海风七号",
+          "passed": false
+        },
+        {
+          "name": "ja_segment",
+          "expected_meaning": "次の会議は東京で開きます",
+          "passed": true
+        },
+        {
+          "name": "en_segment",
+          "expected_meaning": "Please upload the final report by Friday",
+          "passed": false
+        }
+      ],
+      "semantic_passed": 1,
+      "semantic_total": 3,
+      "semantic_content_pass": false
+    }
+  ],
+  "monolingual_critical_fields": {
+    "passed": 9,
+    "total": 9
+  },
+  "monolingual_semantic_cases": {
+    "passed": 3,
+    "total": 3
+  },
+  "full_clip_mixed_segments": {
+    "passed": 1,
+    "total": 3
+  },
+  "separately_transcribed_mixed_segments": {
+    "passed": 3,
+    "total": 3,
+    "cases": [
+      {
+        "id": "MIX-SEG-ZH",
+        "expected": "项目代号是海风七号。",
+        "actual": "项目代号是海风7号",
+        "passed": true
+      },
+      {
+        "id": "MIX-SEG-JA",
+        "expected": "次の会議は東京で開きます。",
+        "actual": "次の会議は東京で開きます。",
+        "passed": true
+      },
+      {
+        "id": "MIX-SEG-EN",
+        "expected": "Please upload the final report by Friday.",
+        "actual": "Please upload the final report by Friday.",
+        "passed": true
+      }
+    ]
+  }
+}

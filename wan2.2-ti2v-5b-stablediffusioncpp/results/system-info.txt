@@ -1,0 +1,22 @@
+Recorded: 2026-09-05 (Asia/Tokyo)
+
+Hardware
+- Model: Mac Studio (Mac14,13)
+- Chip: Apple M2 Max
+- CPU cores: 12 (8 performance, 4 efficiency)
+- Unified memory: 32 GB
+
+Software
+- macOS: 26.6.2 (25G83)
+- AppleClang: 21.0.0 (clang-2100.1.1.101)
+- Target: arm64-apple-darwin25.6.0
+- stable-diffusion.cpp commit: 6b3edaaf32cc19e5bb2d819c788bd557eddc8eba
+- Build: Release, Metal enabled, diffusion flash attention enabled at runtime
+
+Storage at Phase 1/2 baseline
+- Model directory size: 8.4G (du -sh)
+- POSIX immediately available disk space: 132 GiB (df -h)
+- Finder may report a larger figure because macOS can include purgeable space.
+
+Privacy note
+- Serial number, hardware UUID, and provisioning identifiers are intentionally omitted.

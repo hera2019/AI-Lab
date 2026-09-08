@@ -1,0 +1,12 @@
+{
+  "question": "这份报告使用什么硬件？模型生成速度是多少？",
+  "sources": [
+    {
+      "id": "S1",
+      "score": 8.53303,
+      "path": "results/offline-pdf-demo.pdf",
+      "location": "page 1",
+      "text": "AI Lab - 本地离线生成\n第 1 页\n 第一次在 Mac 上运行本地大模型\n在 Mac Studio 上运行本地大模型是一次令人印象深刻的体验。以下是对本次实验的简要总结。\n硬件配置\n• 设备：Mac Studio，Apple M2 Max\n \n• 内存：32 GB 统一内存\n \n• 运行框架：llama.cpp，使用 Metal + Apple Accelerate\n \n模型信息\n• 模型名称：Qwen3-14B Q4_K_M\n \n• 文件大小：约 8.38 GiB（GGUF 格式）\n \n• 模型特性：支持长上下文，适用于复杂任务\n \n运行性能\n• 基准生成速度：约 30.82 tokens/s\n \n• 8K 长上下文：峰值常驻内存约 9.81 GiB，未新增全局 swap\n \n• 16K 长上下文：可运行，但引发约 494 MiB 新增全局 swap\n \n8K 上下文结论\n在日常使用中，推荐使用 8K 上下文长度。它在性能和资源消耗之间取得了良好的平衡，适合大多数应\n用场景。\n个人感受\n首次在 Mac Studio 上运行本地大模型，体验非常流畅。硬件性能强大，软件框架优化良好，模型运\n行稳定，响应速度快。对于本地 AI 应用的探索，这是一次非常值得尝试的体验。"
+    }
+  ]
+}

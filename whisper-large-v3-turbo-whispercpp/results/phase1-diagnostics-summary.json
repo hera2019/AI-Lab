@@ -1,0 +1,67 @@
+{
+  "model": "~/Documents/AI-Models/whispercpp/ggml-large-v3-turbo-q5_0.bin",
+  "cases": [
+    {
+      "id": "ZH-WARM-REPEAT",
+      "file": "asr-zh-001.wav",
+      "language": "zh",
+      "duration_seconds": 8.608,
+      "purpose": "separate one-time Metal startup cost from normal transcription speed",
+      "actual": "今天是2026年9月2日,会议将在下午3点15分开始,订单编号是A731。",
+      "exit_code": 0,
+      "wall_seconds": 1.1311969170346856,
+      "wall_realtime_factor": 0.13141228125402946,
+      "whisper_total_ms": 964.78,
+      "whisper_realtime_factor": 0.11207946096654274,
+      "max_rss_bytes": 865157120,
+      "metal_log_detected": true
+    },
+    {
+      "id": "MIX-SEG-ZH",
+      "file": "mix-zh.wav",
+      "language": "zh",
+      "duration_seconds": 2.255063,
+      "expected": "项目代号是海风七号。",
+      "actual": "项目代号是海风7号",
+      "exit_code": 0,
+      "wall_seconds": 0.8384424159885384,
+      "wall_realtime_factor": 0.3718044311793234,
+      "whisper_total_ms": 729.1,
+      "whisper_realtime_factor": 0.3233169095497554,
+      "max_rss_bytes": 864550912,
+      "metal_log_detected": true
+    },
+    {
+      "id": "MIX-SEG-JA",
+      "file": "mix-ja.wav",
+      "language": "ja",
+      "duration_seconds": 2.649813,
+      "expected": "次の会議は東京で開きます。",
+      "actual": "次の会議は東京で開きます。",
+      "exit_code": 0,
+      "wall_seconds": 0.8382574589923024,
+      "wall_realtime_factor": 0.3163458927072599,
+      "whisper_total_ms": 732.12,
+      "whisper_realtime_factor": 0.2762911948880921,
+      "max_rss_bytes": 865714176,
+      "metal_log_detected": true
+    },
+    {
+      "id": "MIX-SEG-EN",
+      "file": "mix-en.wav",
+      "language": "en",
+      "duration_seconds": 2.32,
+      "expected": "Please upload the final report by Friday.",
+      "actual": "Please upload the final report by Friday.",
+      "exit_code": 0,
+      "wall_seconds": 0.8326402499806136,
+      "wall_realtime_factor": 0.3588966594744024,
+      "whisper_total_ms": 725.81,
+      "whisper_realtime_factor": 0.31284913793103447,
+      "max_rss_bytes": 863715328,
+      "metal_log_detected": true
+    }
+  ],
+  "segmented_mixed_transcript": "项目代号是海风7号 次の会議は東京で開きます。 Please upload the final report by Friday.",
+  "all_commands_ok": true
+}

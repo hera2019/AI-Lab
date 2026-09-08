@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "usage": {
+    "total_tokens": 5295,
+    "total_input_tokens": 4994,
+    "input_tokens_by_modality": [
+      {
+        "modality": "image",
+        "tokens": 1064
+      },
+      {
+        "modality": "text",
+        "tokens": 3930
+      }
+    ],
+    "total_cached_tokens": 0,
+    "total_output_tokens": 301,
+    "total_tool_use_tokens": 0,
+    "total_thought_tokens": 0,
+    "raw_prompt_token": 5622
+  },
+  "created": "2026-08-31T17:51:29Z",
+  "updated": "2026-08-31T17:51:29Z",
+  "service_tier": "standard",
+  "steps": [
+    {
+      "signature": "EmYKZAERTTIPKfsIytSd/N6lyfofR4A29mLXBpx0qTqf+RDOzoNQJM08WaDWOrF/5XJCuwc6YM30BeMbMLuGOEJ3l7MdmprAmzXs1cUW6ff+4ghOKFOBRjxbruKFUe1XdA3YdsBHVQw=",
+      "type": "thought"
+    },
+    {
+      "content": [
+        {
+          "text": "{\n  \"merchant\": \"餃子の王将\",\n  \"receipt_number\": \"657\",\n  \"table_number\": \"25\",\n  \"party_size\": 2,\n  \"staff_id\": \"8\",\n  \"staff_name\": \"大橋\",\n  \"date\": \"2026-06-21\",\n  \"time\": \"17:07\",\n  \"items\": [\n    {\n      \"quantity\": 1,\n      \"description\": \"中華そば\",\n      \"amount\": 748,\n      \"row_marker\": null\n    },\n    {\n      \"quantity\": 1,\n      \"description\": \"特選セットA\",\n      \"amount\": 1120,\n      \"row_marker\": null\n    },\n    {\n      \"quantity\": 1,\n      \"description\": \"特セット餃子＋３個\",\n      \"amount\": 165,\n      \"row_marker\": \"TP\"\n    }\n  ],\n  \"subtotal\": 2033,\n  \"tax\": 0,\n  \"total\": 2033,\n  \"camera_timestamp\": \"2026-06-21 17:30\",\n  \"warnings\": []\n}",
+          "type": "text"
+        }
+      ],
+      "type": "model_output"
+    }
+  ],
+  "object": "interaction",
+  "model": "gemini-3.6-flash"
+}

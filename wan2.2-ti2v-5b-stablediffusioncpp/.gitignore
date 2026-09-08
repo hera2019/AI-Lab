@@ -1,0 +1,10 @@
+.DS_Store
+*.part
+*.tmp
+results/generated/*
+!results/generated/.gitkeep
+
+# ── 2026-09-09 补充（公开前审计）──
+worktrees/
+build/
+build-*/

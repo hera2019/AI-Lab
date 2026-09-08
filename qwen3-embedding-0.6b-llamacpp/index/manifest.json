@@ -1,0 +1,497 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-06T00:06:42+09:00",
+  "source_root": "~/Documents/AI-Lab",
+  "scope": "AI-Lab README files plus docs/**/*.md and results/**/*.md",
+  "included_files": [
+    {
+      "path": "README.md",
+      "bytes": 2514,
+      "sha256": "cb9c569df6677a61379ce067860bfd9926bea8ab5fc22a4889ff9354a3795670",
+      "chunks": 8
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/README.md",
+      "bytes": 6494,
+      "sha256": "9b817a6bc5f99fb163766d83a6e897561e017b3dfd46aaddf4b620ce6e07f3e9",
+      "chunks": 12
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/docs/sources.md",
+      "bytes": 1586,
+      "sha256": "cc6161e511afabb231238e54f05df099ac53212c4055b5a92ea6d34b2523bfc6",
+      "chunks": 3
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/README.md",
+      "bytes": 1529,
+      "sha256": "85c39dcd7629b0c8ca673b26a8d8292767f1810534f48d1ebd392a205ca2bc37",
+      "chunks": 2
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/final-project-summary.md",
+      "bytes": 5716,
+      "sha256": "6e4d88b3cdfa0ac143b0fea2d2bdbde5bfb79356282dd41ed93cdf0fe75277bd",
+      "chunks": 13
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/phase-0-and-download.md",
+      "bytes": 2023,
+      "sha256": "ec0cd6fa8e94a3483f0bba6d7c0c8348c25ccb4c24799db3ab6f5be68c895d10",
+      "chunks": 4
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/phase-1-first-baseline.md",
+      "bytes": 2175,
+      "sha256": "79f785a08d082feed34f764241afaba27053ff0af058307a9675c286f59f85b8",
+      "chunks": 5
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/phase-2-instruction-isolation.md",
+      "bytes": 4650,
+      "sha256": "2f7d87dbeb70d7738ca1220eb3e7b9072845b9812b2bde4a6696ec7de5619440",
+      "chunks": 10
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/phase-2-photo-prompt-ab.md",
+      "bytes": 2727,
+      "sha256": "91fefb0aee8f26b5dcd5ed15716f199fe59ab32d74bbfbd99903c121cc0c6b05",
+      "chunks": 6
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/phase-3-assisted-compositing.md",
+      "bytes": 11819,
+      "sha256": "4b32e08bf5e3ed7d156f6ea3f878be91eb0e507c9741cc5753053b36a08249dc",
+      "chunks": 16
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/phase-3-multi-reference.md",
+      "bytes": 5504,
+      "sha256": "8078e11742b1432ec42353afc4181402a29500f5bb5776fd55d84362c3b86a00",
+      "chunks": 9
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/phase-3-single-edit.md",
+      "bytes": 11016,
+      "sha256": "5059381b3062dcf128256886ad9148b40e487f4c007ed67ec691bf60ccde724e",
+      "chunks": 24
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/results/phase-4-performance-errors.md",
+      "bytes": 5896,
+      "sha256": "b1193ea1b5442ab8dda8bdbd836269d04c7a4dd6393b478616ecfbcbc13603ef",
+      "chunks": 11
+    },
+    {
+      "path": "qwen3-14b-llamacpp/README.md",
+      "bytes": 6624,
+      "sha256": "7fe14a7a85de4fe24f13cdd5d688a986e0fd95bc477be4161a2834c46c3aad56",
+      "chunks": 13
+    },
+    {
+      "path": "qwen3-14b-llamacpp/docs/01-setup.md",
+      "bytes": 3360,
+      "sha256": "da33710d169dbd40299574090aa6d2be4bc4ed5c434c0dad5fda9ea12f4949bd",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-14b-llamacpp/docs/03-offline-pdf.md",
+      "bytes": 916,
+      "sha256": "3f955a2690854369e84cfa92980eff8490fd97fb54b0e5624735f40e2b7824bf",
+      "chunks": 4
+    },
+    {
+      "path": "qwen3-14b-llamacpp/docs/04-local-api.md",
+      "bytes": 893,
+      "sha256": "23f5fb44805ca58dc5908e6045f4e25f21a04e8fdfc4d1682a79316153d6af1a",
+      "chunks": 3
+    },
+    {
+      "path": "qwen3-14b-llamacpp/docs/05-local-rag.md",
+      "bytes": 1865,
+      "sha256": "00702d142bc319d0720d11041faf90be0ea13e7885ef71307c756c8abfeab553",
+      "chunks": 3
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-2-baseline.md",
+      "bytes": 2077,
+      "sha256": "60e2f0a17612f025101c31b8efe65f66dd9c3f76db54b8ab174aefe0e1950602",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-3-context-benchmark.md",
+      "bytes": 2528,
+      "sha256": "8f5d9ad90987f386518ed88b72e1859cb435bdcd6b91c95c70a79249a4e2410e",
+      "chunks": 5
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-4-offline-pdf.md",
+      "bytes": 1244,
+      "sha256": "3bc47ffb3ae3614d2d5766998877b5d49133f8b73efc71e9f51a4442e550838b",
+      "chunks": 4
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-5-local-api.md",
+      "bytes": 993,
+      "sha256": "c3bd40a63f54bc78cfeec778a8f38fb16f225e7be7140c168dfcf4b4604b7375",
+      "chunks": 5
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-6-analysis.md",
+      "bytes": 1698,
+      "sha256": "e045fbb5edb5d3414b2fc6ac49a2d17ad3e639dd9058400b3e4794d4f42728d4",
+      "chunks": 5
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-6-kv-cache.md",
+      "bytes": 2896,
+      "sha256": "3d9b7a17c4c67f0c9badcd1117efafe5c3dfb985223a94bd38f811768c4082ad",
+      "chunks": 5
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-6b-analysis.md",
+      "bytes": 1567,
+      "sha256": "257333a51dd80f825e66deedec1d479ed941c9f8db1413fffe89afe60e24f78b",
+      "chunks": 3
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-6b-kv-quality.md",
+      "bytes": 1446,
+      "sha256": "ee67c7c92d9e70099d0be6a68e97c935b39e7274a1fc9ef9bc2a22c114ad8d82",
+      "chunks": 5
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/phase-7-local-rag.md",
+      "bytes": 1897,
+      "sha256": "268f5da696735dda6fb8dc014de5289fac0b051af7343f64661581ab6d8d8efb",
+      "chunks": 5
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/README.md",
+      "bytes": 5235,
+      "sha256": "7da6a92b42f31bec2381ba1038a58df780a6ab1a4404c9d30e49987139f5e5b3",
+      "chunks": 10
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/docs/03-local-rag.md",
+      "bytes": 2898,
+      "sha256": "7bc93724f5402a1064e3242ddbacfac695ddcbd41490458a87e7c9ab46a7c28a",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/docs/04-generator-model-selection.md",
+      "bytes": 1691,
+      "sha256": "4318738b2cd1a3dea69cda3edaaebc67cb94ec9f04a2a862995fff1f2a2011be",
+      "chunks": 4
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/docs/TERMS.md",
+      "bytes": 983,
+      "sha256": "8799cb81c71e87b251f42904fc8474069fc5ac6a8fe0eec3b1d2970575fcf2a1",
+      "chunks": 1
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/README.md",
+      "bytes": 7480,
+      "sha256": "ba5037a43a155777bf649291d90fe0ff2bbc516237046933f8ba730813c6fc05",
+      "chunks": 13
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/docs/01-phase-0-capability-check.md",
+      "bytes": 3929,
+      "sha256": "ec30f9a391b9d5d9cc92f8deb5f993a9807d8fc7d33fe39c708ba0769e17cbce",
+      "chunks": 5
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/docs/02-gemini-receipt-ab-test.md",
+      "bytes": 4370,
+      "sha256": "4c96c1cd83cc41af727a69beb5c5725f5f6ee63558b8586e3844a9e317581883",
+      "chunks": 7
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/model-cache-cleanup.md",
+      "bytes": 1282,
+      "sha256": "392666e3242845b8fb9581a6c4a96c2f7978f9cc4d81d919ff97538eb8af727f",
+      "chunks": 2
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-0-boundary-assets.md",
+      "bytes": 2604,
+      "sha256": "6c4a52225232d1c8217b3bb787cf838a12d5cd76e0ab438c1bfcf7f76d7f5415",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-1-download-and-smoke.md",
+      "bytes": 2303,
+      "sha256": "4cd9b2d2bb5fc4eda60ba6ed6e40013946bb03ae9a76a9ab3f1c1afb600046a6",
+      "chunks": 4
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-10-gemini-receipt-ab.md",
+      "bytes": 4529,
+      "sha256": "ffb3b025bdc25adb376ed063c2e136cca440b0735b7ce4440aa905d81615b290",
+      "chunks": 8
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-11-visual-reasoning.md",
+      "bytes": 3719,
+      "sha256": "57b5444ad7416644bbc953b540383ba26263f971474edb304f7dec24e528f11b",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-12-natural-scene-reliability.md",
+      "bytes": 4846,
+      "sha256": "f7a00bcbde8860ec8ed1a1773c8f19360d03ba5f4f8a9d5a6b95bf3c9208e5b0",
+      "chunks": 8
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-13-prompt-robustness.md",
+      "bytes": 4637,
+      "sha256": "864aa3e47feb65dedb9c5533bd075526499a31459c12ce5128729a65eb8e76b5",
+      "chunks": 7
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-14-concurrency-scaling.md",
+      "bytes": 3646,
+      "sha256": "62d719ecba35a444ef61e392792ba1a1b018d302e7ceb2bfc8dda81254550daa",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-2-multi-image-order.md",
+      "bytes": 2188,
+      "sha256": "46670bde03f646aef06e3f8d3b8c62fe1a5c931f41920777c102d08c2f34fcbd",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-2-ocr-baseline.md",
+      "bytes": 1693,
+      "sha256": "6e5952a2154f39494322ce7f82a22c475365fcc6038ee969d15564b03302953c",
+      "chunks": 4
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-3-image-boundaries.md",
+      "bytes": 4312,
+      "sha256": "603760bf7b048c30127157c91217c14e90a9b7403ac3e070c76b7ba2e36589aa",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-4-minimal-reproductions.md",
+      "bytes": 3109,
+      "sha256": "ac60f66781e4227c511871bb227969924702b75104b19451e631ede5361990a9",
+      "chunks": 4
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-5-video-baseline.md",
+      "bytes": 2534,
+      "sha256": "4584dda3d7eafe90385b67cdc26c3dc4d77dd0426a33e0ead9df2c08189d79e6",
+      "chunks": 6
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-6-video-boundaries.md",
+      "bytes": 3347,
+      "sha256": "8a51c07b444ef9afbb7f3721c9cc341c5aed803c26552ad29a1edacf1be4777f",
+      "chunks": 7
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-7-real-japanese-receipt-ocr.md",
+      "bytes": 2832,
+      "sha256": "d894a029cf28a53430a0e176aa940ff0574ade56133509f343e17c8612bf0331",
+      "chunks": 7
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-8-apple-vision-hybrid-ocr.md",
+      "bytes": 4252,
+      "sha256": "b53068d514f3375e76670aea92143dea09c0b3ca07f5cbda7e5e1f0652bd7113",
+      "chunks": 7
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/results/phase-9-hybrid-receipt-api.md",
+      "bytes": 4873,
+      "sha256": "825f8cf7f5528930fe94694b220e2ecbe1f33eba004d0457548bf0540b0543fe",
+      "chunks": 7
+    },
+    {
+      "path": "wan2.2-ti2v-5b-stablediffusioncpp/README.md",
+      "bytes": 4930,
+      "sha256": "338b4ac4467b82234fd10aa9fdfcaec86128827fff4977749b4f46e9040269f1",
+      "chunks": 11
+    },
+    {
+      "path": "wan2.2-ti2v-5b-stablediffusioncpp/results/PROJECT-SUMMARY.md",
+      "bytes": 11113,
+      "sha256": "0374fa2bb2afc709640ef29469e6de806a0827a3d90819b08838d523eedb1606",
+      "chunks": 13
+    },
+    {
+      "path": "wan2.2-ti2v-5b-stablediffusioncpp/results/README.md",
+      "bytes": 277,
+      "sha256": "77ed301b4aca691d43ca71a4f2271dcaf7ee0f814208662e1940cbadefa46122",
+      "chunks": 1
+    },
+    {
+      "path": "wan2.2-ti2v-5b-stablediffusioncpp/results/phase-1-2-baseline.md",
+      "bytes": 2870,
+      "sha256": "51316b093fda0e5cb5352cc77124c08ad447930f0798833815d9cb5292f98456",
+      "chunks": 6
+    },
+    {
+      "path": "wan2.2-ti2v-5b-stablediffusioncpp/results/phase-5-fastwan.md",
+      "bytes": 9088,
+      "sha256": "663ca0aed6b002ac925dbec102382f22c429095bc3531b2d79afdf4ba689b8cc",
+      "chunks": 13
+    },
+    {
+      "path": "wan2.2-ti2v-5b-stablediffusioncpp/results/phase-5-super-tae-compatibility.md",
+      "bytes": 3949,
+      "sha256": "70ae0c3b902f31121d52222020797790cfa1685d4d804049fae92df447e856b7",
+      "chunks": 8
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/README.md",
+      "bytes": 5759,
+      "sha256": "718642794129f9bc77b5bf06fadfb34583eb4cc959c48afa8895f91c6ef7dc0c",
+      "chunks": 11
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/docs/01-phase-0-plan.md",
+      "bytes": 2125,
+      "sha256": "c5b71ec49c8db14721e0e3969afe10b6e53825aef60faec5dad40e10e0c196f6",
+      "chunks": 6
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/docs/vad-timestamp-issue-3634-comment-draft.md",
+      "bytes": 3299,
+      "sha256": "25e9dcb30d0c032e6741b368418c1e247e7bbbe5f9c951847487c26011bfd13f",
+      "chunks": 3
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/cleanup-2026-09-03.md",
+      "bytes": 1915,
+      "sha256": "588fc900ccde4084af5c7296d73141f30656f248fa8218d56e85c78555fd96dd",
+      "chunks": 4
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/phase-0-environment-and-plan.md",
+      "bytes": 3785,
+      "sha256": "68cfd3e3a8fa149ac6f4307027723002f68859e42e50436c1b9866c2c4d8aabd",
+      "chunks": 9
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/phase-1-clean-speech-baseline.md",
+      "bytes": 6431,
+      "sha256": "c282db8570fab16faf804e591ea0dd71dabf3ed99aa45bd87df055db4a6bdd36",
+      "chunks": 8
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/phase-2-formats-and-subtitles.md",
+      "bytes": 5436,
+      "sha256": "1ecaa2f5e5c04cfd3694be5a5d2a1c59d4b1565e5d91a0377091e2cb63c7c164",
+      "chunks": 8
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/phase-3-noise-silence-vad.md",
+      "bytes": 7838,
+      "sha256": "855beeffe52897439eb0cab34df37c68853beb37d2fd4949143d3c222bc08ecf",
+      "chunks": 13
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/phase-4-ja-zh-translation.md",
+      "bytes": 5412,
+      "sha256": "b9559bd1f36ae6e0981ba5df5d49c55fc51ffcb9058f539afea49c4775f6ae56",
+      "chunks": 11
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/phase-4b-realtime-playback-demo.md",
+      "bytes": 3924,
+      "sha256": "8ab36ae8d8a23ec70060015d08c5a5e6248a226886cff4075f7864a72aa88948",
+      "chunks": 6
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/phase-4c-microphone-trilingual.md",
+      "bytes": 5146,
+      "sha256": "dc6c88852a32b5e92e96b04ea3317841926ee7221a495883a622158435e87bc7",
+      "chunks": 7
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/phase-4d-microphone-multilingual.md",
+      "bytes": 5489,
+      "sha256": "aaa44b89902f05ca3f00488257571637d5d6f59c9010e386799827bf72f544c8",
+      "chunks": 7
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/results/vad-timestamp-repro-report.md",
+      "bytes": 4801,
+      "sha256": "9d85639d8497e1ded7ae220e8061112f6948ab23607c47267c4b0322761e28e4",
+      "chunks": 10
+    }
+  ],
+  "excluded_markdown": [
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/scripts/README.md",
+      "reason": "outside-scope"
+    },
+    {
+      "path": "flux2-klein-4b-stablediffusioncpp/tests/test-matrix.md",
+      "reason": "test-or-fixture"
+    },
+    {
+      "path": "qwen3-14b-llamacpp/PROJECT-SUMMARY.md",
+      "reason": "outside-scope"
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/offline-pdf-demo.md",
+      "reason": "model-generated-answer"
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/rag-last-answer.md",
+      "reason": "model-generated-answer"
+    },
+    {
+      "path": "qwen3-14b-llamacpp/results/rag-pdf-demo-answer.md",
+      "reason": "model-generated-answer"
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/results/phase-1-summary.md",
+      "reason": "current-project-result"
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/results/phase-1a-body-only.md",
+      "reason": "current-project-result"
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/results/phase-1b-title-body.md",
+      "reason": "current-project-result"
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/results/phase-2-evaluation.md",
+      "reason": "current-project-result"
+    },
+    {
+      "path": "qwen3-embedding-0.6b-llamacpp/results/phase-2-summary.md",
+      "reason": "current-project-result"
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/PROJECT-SUMMARY.md",
+      "reason": "outside-scope"
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/tests/boundary-cases.md",
+      "reason": "test-or-fixture"
+    },
+    {
+      "path": "qwen3-vl-8b-llamacpp/tests/fixtures/receipts/README.md",
+      "reason": "test-or-fixture"
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/tests/microphone-multilingual-script.md",
+      "reason": "test-or-fixture"
+    },
+    {
+      "path": "whisper-large-v3-turbo-whispercpp/tests/test-matrix.md",
+      "reason": "test-or-fixture"
+    }
+  ],
+  "included_file_count": 70,
+  "excluded_file_count": 16,
+  "chunk_count": 497
+}
