@@ -1,5 +1,7 @@
 # Wan2.2 TI2V 5B with stable-diffusion.cpp
 
+**研究页面（英文）：**[houjun.dev/lab/video](https://houjun.dev/lab/video/)
+
 在 Mac Studio（Apple M2 Max、32 GB Unified Memory）上测试本地文字生成视频与图片生成视频。
 
 ## 实际应用意义

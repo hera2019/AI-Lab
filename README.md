@@ -1,5 +1,7 @@
 # AI Lab
 
+**Project pages:** [houjun.dev/lab](https://houjun.dev/lab/), one page per study, written for non-specialists.
+
 Seven local-inference studies on a single 32 GB Apple Silicon machine.
 
 This is **not a collection of model demos.** Every study answers the same three

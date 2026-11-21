@@ -1,5 +1,7 @@
 # Qwen3-VL-8B with llama.cpp
 
+**研究页面（英文）：**[houjun.dev/lab/receipts](https://houjun.dev/lab/receipts/)
+
 本项目用于在 Mac Studio（Apple M2 Max、32 GB Unified Memory）上实验本地多模态模型。
 
 ## 当前状态

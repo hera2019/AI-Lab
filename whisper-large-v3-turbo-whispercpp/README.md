@@ -1,5 +1,7 @@
 # Whisper large-v3-turbo with whisper.cpp
 
+**研究页面（英文）：**[houjun.dev/lab/speech](https://houjun.dev/lab/speech/)
+
 在 Mac Studio（Apple M2 Max、32 GB Unified Memory）上研究本地语音识别。
 
 ## 实际应用

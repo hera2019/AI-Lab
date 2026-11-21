@@ -1,5 +1,7 @@
 # Qwen3 Embedding 0.6B with llama.cpp
 
+**研究页面（英文）：**[houjun.dev/lab/rag](https://houjun.dev/lab/rag/)
+
 在 Mac Studio（Apple M2 Max、32 GB Unified Memory）上学习并测试本地语义向量检索与 RAG。
 
 ## 实际应用意义

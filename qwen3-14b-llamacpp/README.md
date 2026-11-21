@@ -1,5 +1,7 @@
 # Qwen3-14B with llama.cpp
 
+**研究页面（英文）：**[houjun.dev/lab/llm](https://houjun.dev/lab/llm/)
+
 本项目用于在 Mac Studio（Apple M2 Max、32 GB Unified Memory）上实验本地大语言模型推理。
 
 完整阶段总结与日后使用入口见 `PROJECT-SUMMARY.md`。

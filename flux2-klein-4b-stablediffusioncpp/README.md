@@ -1,5 +1,7 @@
 # FLUX.2 klein 4B with stable-diffusion.cpp
 
+**研究页面（英文）：**[houjun.dev/lab/image](https://houjun.dev/lab/image/)
+
 在 Mac Studio（Apple M2 Max、32 GB Unified Memory）上研究本地图片生成与编辑。
 
 ## 实际应用意义

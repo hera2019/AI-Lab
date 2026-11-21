@@ -1,5 +1,7 @@
 # Qwen3-TTS 0.6B Voice Clone · MLX
 
+**研究页面（英文）：**[houjun.dev/lab/voice](https://houjun.dev/lab/voice/)
+
 完全本地的 Apple Silicon 声音克隆实验。只使用本人录音或已获得明确授权的声音。
 
 ## 目标
